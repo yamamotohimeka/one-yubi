@@ -92,6 +92,7 @@ $paginatedDates = array_slice($dates, $startIndex, $itemsPerPage);
 <?php endforeach; ?>
 
 <?php 
-session_unset();  // セッションのクリア
-session_destroy();  // セッションの破棄
+//テスト用
+// session_unset();  // セッションのクリア
+// session_destroy();  // セッションの破棄
 ?>
