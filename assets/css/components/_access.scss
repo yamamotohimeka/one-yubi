@@ -38,6 +38,7 @@
         gap: calc(12vw / (1200 / 100));
       }
       @include tab {
+        align-items: center;
         margin: 0 auto;
       }
 
