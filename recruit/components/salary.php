@@ -157,10 +157,10 @@
       <div class="salary__box4-inner">
         <img src="<?php echo $path; ?>assets/images/salary-img2.png" alt="75%未経験">
         <img src="<?php echo $path; ?>assets/images/salary-girl1.png" alt="未経験の女の子１">
-        <img src="<?php echo $path; ?>assets/images/salary-girl1.png" alt="未経験の女の子２">
-        <img src="<?php echo $path; ?>assets/images/salary-girl1.png" alt="未経験の女の子３">
-        <img src="<?php echo $path; ?>assets/images/salary-girl1.png" alt="未経験の女の子４">
-        <img src="<?php echo $path; ?>assets/images/salary-girl1.png" alt="未経験の女の子５">
+        <img src="<?php echo $path; ?>assets/images/salary-girl2.png" alt="未経験の女の子２">
+        <img src="<?php echo $path; ?>assets/images/salary-girl3.png" alt="未経験の女の子３">
+        <img src="<?php echo $path; ?>assets/images/salary-girl4.png" alt="未経験の女の子４">
+        <img src="<?php echo $path; ?>assets/images/salary-girl5.png" alt="未経験の女の子５">
       </div>
     </div>
   </div>

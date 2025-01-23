@@ -736,9 +736,9 @@
       }
       img {
         position: absolute;
-        width: 335px;
+        width: 269px;
         @include pc {
-          width: calc(335vw / (1200 / 100));
+          width: calc(269vw / (1200 / 100));
         }
         @include tab {
           width: calc(365vw / (768 / 100));
@@ -759,11 +759,12 @@
           }
         }
         &:nth-child(2) {
-          top: 142px;
-          left: 35px;
+          top: 165px;
+          left: 72px;
+          transform: rotate(346deg);
           @include pc {
-            top: calc(142vw / (1200 / 100));
-            left: calc(35vw / (1200 / 100));
+            top: calc(165vw / (1200 / 100));
+            left: calc(72vw / (1200 / 100));
           }
           @include tab {
             top: calc(74vw / (768 / 100));
@@ -772,37 +773,39 @@
           }
         }
         &:nth-child(3) {
-          top: 476px;
-          left: 195px;
-          transform: rotate(4deg);
+          top: 500px;
+          left: 221px;
+          transform: rotate(-10deg);
           @include pc {
-            top: calc(476vw / (1200 / 100));
-            left: calc(195vw / (1200 / 100));
+            top: calc(500vw / (1200 / 100));
+            left: calc(221vw / (1200 / 100));
           }
           @include tab {
             top: calc(493vw / (768 / 100));
             left: calc(27vw / (768 / 100));
             transform: rotate(-8deg);
+            z-index: 2;
           }
         }
         &:nth-child(4) {
-          top: 493px;
-          left: 437px;
-          transform: rotate(14deg);
+          top: 515px;
+          left: 470px;
+          transform: rotate(1deg);
           @include pc {
-            top: calc(493vw / (1200 / 100));
-            left: calc(437vw / (1200 / 100));
+            top: calc(515vw / (1200 / 100));
+            left: calc(470vw / (1200 / 100));
           }
           @include tab {
             top: calc(455vw / (768 / 100));
             left: calc(357vw / (768 / 100));
             transform: rotate(7deg);
+            z-index: 1;
           }
         }
         &:nth-child(5) {
-          top: 488px;
-          left: 692px;
-          transform: rotate(28deg);
+          top: 509px;
+          left: 722px;
+          transform: rotate(14deg);
           @include pc {
             top: calc(488vw / (1200 / 100));
             left: calc(692vw / (1200 / 100));
@@ -814,12 +817,12 @@
           }
         }
         &:nth-child(6) {
-          top: 145px;
-          right: 27px;
-          transform: rotate(31deg);
+          top: 170px;
+          right: 59px;
+          transform: rotate(17deg);
           @include pc {
-            top: calc(145vw / (1200 / 100));
-            right: calc(27vw / (1200 / 100));
+            top: calc(170vw / (1200 / 100));
+            right: calc(59vw / (1200 / 100));
           }
           @include tab {
             top: calc(867vw / (768 / 100));
