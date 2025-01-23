@@ -1,0 +1,10 @@
+.*
+!/.gitignore
+/assets/css/style.css
+/assets/css/style.css.map
+
+recruit/php_mailer/vendor/
+recruit/php_mailer/.env
+recruit/assets/css/style.css
+recruit/assets/css/style.css.map
+recruit/php_mailer/composer.lock
