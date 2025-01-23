@@ -75,6 +75,12 @@ $(function () {
     $(".header__tabNav__close").removeClass("header__tabNav__close-active");
   });
 
+  // フッターのトップボタンをクリック
+  $(`.footer__topBtn a`).on("click", (event) => {
+    event.preventDefault(); // デフォルトの動作を防ぐ
+    $("html, body").animate({ scrollTop: 0 }, 500); // スムーズにページトップへ
+  });
+
   //一週間の曜日(英・日),日付,今日の日付取得
   moment.locale("en");
   const month = [];

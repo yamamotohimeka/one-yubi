@@ -15,6 +15,9 @@
       @include tab {
         gap: calc(47vw / (768 / 100)) calc(24vw / (768 / 100));
       }
+      @include sp {
+        gap: calc(30vw / (440 / 100)) calc(10vw / (440 / 100));
+      }
     }
   }
 }
@@ -38,6 +41,9 @@
       @include tab {
         padding: calc(55vw / (768 / 100)) 0 0 calc(31vw / (768 / 100));
         gap: calc(47vw / (768 / 100)) calc(24vw / (768 / 100));
+      }
+      @include sp {
+        gap: calc(30vw / (440 / 100)) calc(10vw / (440 / 100));
       }
     }
   }
