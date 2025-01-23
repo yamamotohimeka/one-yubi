@@ -1,0 +1,54 @@
+@mixin center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@mixin flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+$pc: 1200px;
+$tab: 768px;
+$sp: 440px;
+
+@mixin pc {
+  @media (max-width: ($pc)) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media (max-width: ($tab)) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+$yellow: #ffff00;
+$blue: #5cc5d8;
+$pink: #ef74bd;
+$pink2: #e596ba;
+$green: #65c378;
+$purple: #6c6b86;
+$gray: #a7bec8;

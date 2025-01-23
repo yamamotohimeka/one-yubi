@@ -1,0 +1,223 @@
+.faq {
+  padding-top: 205px;
+  padding-bottom: 200px;
+  @include pc {
+    padding-top: calc(205vw / (1200 / 100));
+    padding-bottom: calc(200vw / (1200 / 100));
+  }
+  @include tab {
+    padding-top: calc(155vw / (768 / 100));
+    padding-bottom: calc(100vw / (768 / 100));
+  }
+  h2 {
+    padding: 30px 0 0 0;
+    margin: 0 auto;
+
+    background: url(../images/h2-bg.png) no-repeat center center / 892px 111px;
+    width: 892px;
+    height: 111px;
+
+    font-size: 40px;
+    font-family: $gothic;
+    font-weight: 400;
+    color: #5cc5d8;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    @include pc {
+      padding: calc(30vw / (1200 / 100)) 0 0 calc(14vw / (1200 / 100));
+      font-size: calc(40vw / (1200 / 100));
+      background-size: calc(892vw / (1200 / 100)) calc(111vw / (1200 / 100));
+      width: calc(892vw / (1200 / 100));
+      height: calc(111vw / (1200 / 100));
+    }
+    @include tab {
+      font-size: calc(32vw / (768 / 100));
+      background-size: calc(749vw / (768 / 100)) calc(94vw / (768 / 100));
+      width: calc(749vw / (768 / 100));
+      height: calc(94vw / (768 / 100));
+      padding: calc(30vw / (768 / 100)) 0 0 0;
+    }
+  }
+
+  &-box {
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 33px;
+      padding-top: 62px;
+      @include pc {
+        padding-top: calc(62vw / (1200 / 100));
+        gap: calc(33vw / (1200 / 100));
+      }
+      @include tab {
+        padding-top: calc(92vw / (768 / 100));
+        gap: calc(30vw / (768 / 100));
+      }
+    }
+
+    background-color: $blue;
+    color: #fff;
+    width: 1077px;
+    margin: 0 auto;
+    border-radius: 13px;
+    padding: 15px 0;
+    @include pc {
+      width: calc(1077vw / (1200 / 100));
+      padding: calc(15vw / (1200 / 100)) 0;
+    }
+    @include tab {
+      width: calc(722vw / (768 / 100));
+      padding: calc(4vw / (768 / 100)) 0 calc(12vw / (768 / 100)) 0;
+    }
+    dt {
+      padding: 29px 0;
+      font-size: 39px;
+      text-align: center;
+      position: relative;
+      @include pc {
+        padding: calc(29vw / (1200 / 100)) 0;
+        font-size: calc(39vw / (1200 / 100));
+      }
+      @include tab {
+        font-size: calc(33vw / (768 / 100));
+        letter-spacing: calc(-3vw / (768 / 100));
+        padding: calc(16vw / (768 / 100)) 0 calc(59vw / (768 / 100)) 0;
+      }
+      &::before {
+        content: "Q";
+        position: absolute;
+        top: -15px;
+        left: 1px;
+        font-size: 44px;
+        font-weight: 700;
+        padding: 10px 20px;
+        border-radius: 13px 16% 52% 29% / 16% 50% 51% 0%;
+        background-color: #2f9fb5;
+        color: #fff;
+        @include pc {
+          font-size: calc(44vw / (1200 / 100));
+          top: calc(-15vw / (1200 / 100));
+          left: calc(1vw / (1200 / 100));
+        }
+        @include tab {
+          font-size: calc(44vw / (768 / 100));
+          top: calc(-4vw / (768 / 100));
+          padding: calc(10vw / (768 / 100)) calc(20vw / (768 / 100));
+          border-radius: 13px 16% 52% 29% / 16% 50% 51% 0%;
+        }
+      }
+    }
+    dd {
+      background-color: #fff;
+      color: #3c93b9;
+      width: 1046px;
+      border-radius: 13px;
+      padding: 20px;
+      margin: 0 auto;
+      font-size: 21px;
+      line-height: 1.5;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      @include pc {
+        width: calc(1046vw / (1200 / 100));
+        font-size: calc(21vw / (1200 / 100));
+        padding: calc(20vw / (1200 / 100)) 0;
+      }
+      @include tab {
+        width: calc(700vw / (768 / 100));
+        font-size: calc(30vw / (768 / 100));
+        padding: calc(52vw / (768 / 100)) calc(17vw / (768 / 100));
+        display: block;
+        position: relative;
+        line-height: 1.4;
+      }
+      &::before {
+        content: "A";
+        background-color: $blue;
+        color: #fff;
+        font-size: 44px;
+        font-weight: 700;
+        padding: 10px 20px;
+        border-radius: 50px;
+        margin-right: 10px;
+        width: 49px;
+        height: 49px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include pc {
+          font-size: calc(44vw / (1200 / 100));
+          padding: calc(10vw / (1200 / 100)) calc(20vw / (1200 / 100));
+          width: calc(49vw / (1200 / 100));
+          height: calc(49vw / (1200 / 100));
+          margin-right: calc(10vw / (1200 / 100));
+        }
+        @include tab {
+          font-size: calc(37vw / (768 / 100));
+          padding: calc(10vw / (768 / 100)) calc(20vw / (768 / 100));
+          width: calc(51vw / (768 / 100));
+          height: calc(51vw / (768 / 100));
+          margin-right: 0;
+          border: calc(1vw / (768 / 100)) solid #fff;
+
+          position: absolute;
+          top: calc(-27vw / (768 / 100));
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+
+  &__more {
+    padding-top: 39px;
+    text-align: center;
+    font-size: 30px;
+    color: $blue;
+    @include pc {
+      padding-top: calc(39vw / (1200 / 100));
+      font-size: calc(30vw / (1200 / 100));
+    }
+    @include tab {
+      padding-top: calc(30vw / (768 / 100));
+      font-size: calc(30vw / (768 / 100));
+      font-weight: 300;
+    }
+    button {
+      position: relative;
+      display: inline-block;
+      &::after {
+        content: "";
+        width: 17px;
+        height: 17px;
+        border: 0;
+        border-bottom: solid 4px $blue;
+        border-right: solid 4px $blue;
+        transform: rotate(45deg);
+        position: absolute;
+        left: 44%;
+        bottom: -24px;
+        margin: auto;
+        @include pc {
+          width: calc(17vw / (1200 / 100));
+          height: calc(17vw / (1200 / 100));
+          border-bottom-width: calc(4vw / (1200 / 100));
+          border-right-width: calc(4vw / (1200 / 100));
+          bottom: calc(-24vw / (1200 / 100));
+        }
+        @include tab {
+          width: calc(17vw / (768 / 100));
+          height: calc(17vw / (768 / 100));
+          border-bottom-width: calc(4vw / (768 / 100));
+          border-right-width: calc(4vw / (768 / 100));
+          bottom: calc(-24vw / (768 / 100));
+        }
+      }
+
+      &.active::after {
+        transform: rotate(224deg);
+      }
+    }
+  }
+}

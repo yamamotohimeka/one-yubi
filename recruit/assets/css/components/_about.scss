@@ -1,0 +1,228 @@
+.about {
+  @include tab {
+    margin-top: calc(15vw / (768 / 100));
+  }
+  h2 {
+    padding: 30px 0 0 0;
+    margin: 0 auto;
+
+    background: url(../images/h2-bg.png) no-repeat center center / 892px 111px;
+    width: 892px;
+    height: 111px;
+
+    font-size: 40px;
+    font-family: "Noto Sans CJK JP", $gothic;
+    font-weight: 400;
+    color: #5cc5d8;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    @include pc {
+      padding: calc(30vw / (1200 / 100)) 0;
+      font-size: calc(40vw / (1200 / 100));
+      background-size: calc(892vw / (1200 / 100)) calc(111vw / (1200 / 100));
+      width: calc(892vw / (1200 / 100));
+      height: calc(111vw / (1200 / 100));
+    }
+    @include tab {
+      font-size: calc(32vw / (768 / 100));
+      background-size: calc(749vw / (768 / 100)) calc(94vw / (768 / 100));
+      width: calc(749vw / (768 / 100));
+      height: calc(94vw / (768 / 100));
+      padding: calc(30vw / (768 / 100)) 0 0 0;
+    }
+  }
+  &__point {
+    &__list {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 61px;
+      padding: 79px 0 0 50px;
+      @include pc {
+        padding: calc(79vw / (1200 / 100)) 0 0 calc(50vw / (1200 / 100));
+        gap: calc(61vw / (1200 / 100));
+      }
+      @include tab {
+        padding: 55px 0 0 0;
+      }
+
+      &-item {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 43px;
+        @include pc {
+          gap: calc(43vw / (1200 / 100));
+        }
+        @include tab {
+          gap: calc(40vw / (768 / 100));
+        }
+
+        img {
+          width: 130px;
+          @include pc {
+            width: calc(130vw / (1200 / 100));
+          }
+          @include tab {
+            width: calc(130vw / (768 / 100));
+          }
+        }
+        p {
+          font-size: 31px;
+          color: $blue;
+          max-width: 930px;
+          line-height: 1.5;
+          @include pc {
+            font-size: calc(31vw / (1200 / 100));
+          }
+          @include tab {
+            font-size: calc(31vw / (768 / 100));
+          }
+        }
+      }
+    }
+  }
+
+  &__description {
+    position: relative;
+    margin-top: 152px;
+    margin-left: 81px;
+    @include pc {
+      margin-top: calc(152vw / (1200 / 100));
+      margin-left: calc(81vw / (1200 / 100));
+    }
+    @include tab {
+      padding-top: calc(554vw / (768 / 100));
+      margin-top: 0;
+      margin-left: 0;
+    }
+
+    &__text {
+      position: absolute;
+      top: calc(188vw / (768 / 100));
+      left: calc(32vw / (768 / 100));
+      transform: rotate(-14deg);
+
+      padding: calc(48vw / (768 / 100)) 0;
+      font-size: calc(47vw / (768 / 100));
+      width: calc(284vw / (768 / 100));
+      height: calc(284vw / (768 / 100));
+
+      color: #ffff00;
+      background-color: $blue;
+      border-radius: 50%;
+      text-align: center;
+
+      font-family: "A-OTF 新ゴ Pro", $gothic;
+      span {
+        font-size: calc(30vw / (768 / 100));
+      }
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      width: 604px;
+      @include pc {
+        gap: calc(50vw / (1200 / 100));
+        width: calc(604vw / (1200 / 100));
+      }
+      @include tab {
+        gap: calc(74vw / (768 / 100));
+        width: 100%;
+      }
+      &-item {
+        color: $blue;
+
+        dt {
+          display: flex;
+          align-items: flex-end;
+          padding-bottom: 20px;
+
+          letter-spacing: 0.17rem;
+          font-size: 35px;
+          border-bottom: 2px solid $blue;
+          font-family: "Noto Sans CJK JP", $gothic;
+          font-weight: 300;
+          @include pc {
+            padding-bottom: calc(20vw / (1200 / 100));
+            font-size: calc(35vw / (1200 / 100));
+          }
+          @include tab {
+            font-size: calc(42vw / (768 / 100));
+            border-bottom: 3px solid $blue;
+          }
+          span {
+            font-size: 27px;
+            @include pc {
+              font-size: calc(27vw / (1200 / 100));
+            }
+            @include tab {
+              font-size: calc(32vw / (768 / 100));
+            }
+          }
+          &::before {
+            content: "";
+            display: block;
+            background-image: url(../images/about-description-icon.png);
+            background-size: 47px 45px;
+            background-repeat: no-repeat;
+            width: 47px;
+            height: 45px;
+            margin-right: 23px;
+            @include pc {
+              background-size: calc(47vw / (1200 / 100))
+                calc(45vw / (1200 / 100));
+              width: calc(47vw / (1200 / 100));
+              height: calc(45vw / (1200 / 100));
+              margin-right: calc(23vw / (1200 / 100));
+            }
+            @include tab {
+              background-size: calc(58vw / (768 / 100)) calc(58vw / (768 / 100));
+              width: calc(58vw / (768 / 100));
+              height: calc(58vw / (768 / 100));
+              margin-right: calc(23vw / (768 / 100));
+            }
+          }
+        }
+        dd {
+          padding: 14px 0 0 66px;
+          font-size: 22px;
+          letter-spacing: 0.1rem;
+          @include pc {
+            padding: calc(14vw / (1200 / 100)) 0 0 calc(66vw / (1200 / 100));
+            font-size: calc(22vw / (1200 / 100));
+          }
+          @include tab {
+            padding: calc(14vw / (768 / 100)) 0 0 calc(66vw / (768 / 100));
+            font-size: calc(28vw / (768 / 100));
+            text-shadow: 3px 3px 3px #fff, -3px -3px 3px #fff, -3px 3px 3px #fff,
+              3px -3px 3px #fff, 3px 0px 3px #fff, -3px -0px 3px #fff,
+              0px 3px 3px #fff, 0px -3px 3px #fff;
+          }
+        }
+      }
+    }
+    &__img {
+      position: absolute;
+      top: -137px;
+      right: -3px;
+      z-index: -1;
+      width: 542px;
+      @include pc {
+        top: calc(-137vw / (1200 / 100));
+        right: calc(-3vw / (1200 / 100));
+        width: calc(542vw / (1200 / 100));
+      }
+      @include tab {
+        top: calc(-12vw / (768 / 100));
+        right: 0;
+        width: calc(587vw / (768 / 100));
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

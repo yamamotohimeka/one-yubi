@@ -1,0 +1,58 @@
+.access {
+  &__store {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 289px 0 120px 0;
+    gap: 222px;
+    font-family: "A-OTF リュウミン Pr6N", $mincho;
+    font-weight: normal;
+    font-size: 30px;
+    @include pc {
+      font-size: calc(30vw / (1200 / 100));
+      padding: calc(289vw / (1200 / 100)) 0 calc(120vw / (1200 / 100)) 0;
+      gap: calc(222vw / (1200 / 100));
+    }
+    @include tab {
+      padding: calc(65vw / (768 / 100)) 0 calc(10vw / (768 / 100));
+      font-size: calc(28vw / (768 / 100));
+      gap: calc(103vw / (768 / 100));
+    }
+
+    &-text {
+      text-align: center;
+      display: flex;
+      @include tab {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+
+    &-map {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      @include pc {
+        gap: calc(12vw / (1200 / 100));
+      }
+      @include tab {
+        margin: 0 auto;
+      }
+
+      .map-img {
+        width: 1200px;
+        height: 532px;
+        @include pc {
+          width: calc(1200vw / (1200 / 100));
+          height: calc(532vw / (1200 / 100));
+        }
+        @include tab {
+          width: calc(557vw / (768 / 100));
+          height: calc(557vw / (768 / 100));
+        }
+      }
+    }
+  }
+}

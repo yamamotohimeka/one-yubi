@@ -1,0 +1,196 @@
+.contact {
+  padding-top: 20px;
+  padding-bottom: 90px;
+  @include pc {
+    padding-top: calc(20vw / (1200 / 100));
+    padding-bottom: calc(90vw / (1200 / 100));
+  }
+  @include tab {
+    padding-top: calc(6vw / (768 / 100));
+    padding-bottom: calc(90vw / (768 / 100));
+  }
+  h2 {
+    padding: 30px 0 0 0;
+    margin: 0 auto;
+
+    background: url(../images/h2-bg.png) no-repeat center center / 892px 111px;
+    width: 892px;
+    height: 111px;
+
+    font-size: 40px;
+    font-family: $gothic;
+    font-weight: 400;
+    color: #5cc5d8;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    @include pc {
+      padding: calc(30vw / (1200 / 100)) 0 0 0;
+      font-size: calc(40vw / (1200 / 100));
+      background-size: calc(892vw / (1200 / 100)) calc(111vw / (1200 / 100));
+      width: calc(892vw / (1200 / 100));
+      height: calc(111vw / (1200 / 100));
+    }
+    @include tab {
+      font-size: calc(32vw / (768 / 100));
+      background-size: calc(749vw / (768 / 100)) calc(94vw / (768 / 100));
+      width: calc(749vw / (768 / 100));
+      height: calc(94vw / (768 / 100));
+      padding: calc(30vw / (768 / 100)) 0 0 0;
+    }
+  }
+  &__box {
+    padding-bottom: 100px;
+    @include pc {
+      padding-bottom: calc(100vw / (1200 / 100));
+    }
+    @include tab {
+      padding-bottom: calc(57vw / (768 / 100));
+    }
+    &-tel {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+      padding-top: 100px;
+      padding-bottom: 83px;
+      @include pc {
+        padding-top: calc(110vw / (1200 / 100));
+        padding-bottom: calc(83vw / (1200 / 100));
+      }
+      @include tab {
+        padding-top: calc(108vw / (768 / 100));
+        padding-bottom: calc(44vw / (768 / 100));
+      }
+      h3 {
+        font-size: 33px;
+        font-family: $gothic;
+        font-weight: 200;
+        @include pc {
+          font-size: calc(33vw / (1200 / 100));
+        }
+        @include tab {
+          font-size: calc(33vw / (768 / 100));
+        }
+      }
+      p {
+        font-size: 54px;
+        font-family: "A-OTF ゴシックMB101 Pr5", $gothic;
+        font-weight: 500;
+        letter-spacing: 0.45rem;
+        @include pc {
+          font-size: calc(54vw / (1200 / 100));
+        }
+        @include tab {
+          font-size: calc(56vw / (768 / 100));
+        }
+        @include sp {
+          font-size: calc(24vw / (440 / 100));
+        }
+      }
+    }
+
+    &-line {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 818px;
+      box-shadow: 0px 2px 5px gray;
+      @include pc {
+        width: calc(818vw / (1200 / 100));
+      }
+      @include tab {
+        flex-direction: column-reverse;
+        gap: calc(13vw / (768 / 100));
+        width: 100%;
+        box-shadow: unset;
+      }
+      &-inner {
+        padding: 50px 80px;
+        @include pc {
+          padding: calc(58vw / (1200 / 100)) calc(80vw / (1200 / 100));
+          margin: 0 calc(50% - 50vw);
+        }
+        &:nth-child(2) {
+          background-color: #00a84f;
+        }
+        &:last-child {
+          @include tab {
+            background-color: #00a84f;
+
+            padding: calc(40vw / (768 / 100)) 0 calc(33vw / (768 / 100)) 0;
+          }
+        }
+
+        @include tab {
+          text-align: center;
+          padding: 0;
+          a > img {
+            width: calc(679vw / (768 / 100)) !important;
+          }
+        }
+        img {
+          width: 239px;
+          @include pc {
+            width: calc(239vw / (1200 / 100));
+          }
+
+          &:last-child {
+            width: 248px;
+            @include pc {
+              width: calc(248vw / (1200 / 100));
+            }
+            @include tab {
+              width: calc(495vw / (768 / 100));
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__box2 {
+    padding-top: 50px;
+    margin: 0 auto;
+    max-width: 1022px;
+    box-shadow: 0px 2px 5px gray;
+    position: relative;
+    background-color: #fff;
+    @include pc {
+      padding-top: calc(50vw / (1200 / 100));
+      max-width: calc(1022vw / (1200 / 100));
+    }
+    @include tab {
+      padding-top: calc(1vw / (768 / 100));
+      box-shadow: unset;
+      max-width: 100%;
+    }
+    h3 {
+      font-size: 33px;
+      font-family: $gothic;
+      font-weight: 200;
+      text-align: center;
+      @include pc {
+        font-size: calc(33vw / (1200 / 100));
+      }
+      @include tab {
+        font-size: calc(42vw / (768 / 100));
+        font-weight: 500;
+      }
+    }
+  }
+  &-bg {
+    background-color: #f5f5f5;
+    width: 100vw;
+    margin: 0 calc(50% - 50vw);
+    height: 100%;
+    max-height: 1021px;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: -2;
+    @include tab {
+      display: none;
+    }
+  }
+}

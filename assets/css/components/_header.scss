@@ -1,0 +1,450 @@
+.header {
+  &__fv {
+    padding-top: 70px;
+    @include lg {
+      padding-top: calc(70vw / (2000 / 100));
+    }
+    @include tab {
+      padding-top: calc(46vw / (768 / 100));
+    }
+    img {
+      width: 100%;
+      height: 100vh;
+      max-height: 739px;
+      @include lg {
+        max-height: calc(739vw / (2000 / 100));
+      }
+      @include pc {
+        max-height: calc(739vw / (1200 / 100));
+        height: auto;
+      }
+    }
+  }
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0 0;
+    margin: 0 136px;
+    @include lg {
+      margin: 0 calc(10vw / (2000 / 100));
+      gap: calc(20vw / (2000 / 100));
+    }
+    @include pc {
+      padding: calc(24vw / (1200 / 100)) 0 calc(0vw / (1200 / 100));
+    }
+  }
+
+  &__tel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 49px;
+    color: $pink;
+    letter-spacing: -0.13rem;
+    width: 439px;
+    @include lg {
+      font-size: calc(58vw / (2000 / 100));
+      width: calc(439vw / (2000 / 100));
+    }
+    @include tab {
+      display: none;
+    }
+
+    img {
+      width: 61px;
+      @include lg {
+        width: calc(61vw / (2000 / 100));
+      }
+    }
+  }
+
+  &__logo {
+    padding-top: 44px;
+    width: 480px;
+    @include lg {
+      width: calc(480vw / (2000 / 100));
+    }
+    @include tab {
+      padding-top: calc(16vw / (768 / 100));
+      padding-left: calc(52vw / (768 / 100));
+      width: calc(540vw / (768 / 100));
+    }
+    img {
+      width: 480px;
+      @include lg {
+        width: calc(480vw / (2000 / 100));
+      }
+      @include tab {
+        width: calc(480vw / (768 / 100));
+      }
+    }
+  }
+
+  &__login {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 24px;
+    @include tab {
+      display: none;
+    }
+    img {
+      width: 87px;
+      @include lg {
+        width: calc(87vw / (2000 / 100));
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 136px;
+    @include lg {
+      gap: calc(136vw / (2000 / 100));
+    }
+
+    &-innerFlex {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+  }
+  &__nav {
+    &__list {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+
+      font-size: 22px;
+      font-weight: 200;
+      font-family: "DIN Next LT Pro", "ヒラギノ角ゴ Pro W3",
+        "Hiragino Kaku Gothic Pro", "Hiragino Kaku Gothic Pro", "メイリオ",
+        Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+      @include lg {
+        font-size: calc(24vw / (2000 / 100));
+        gap: calc(30vw / (2000 / 100));
+      }
+
+      &-link {
+        &.active {
+          color: $pink;
+        }
+      }
+    }
+  }
+
+  /********************************************
+* ハンバーガーメニュー
+********************************************/
+  &__tabNav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: $pink;
+    color: #fff;
+    transition: 0.6s all ease-out;
+    z-index: 90;
+    overflow: hidden;
+
+    &__close {
+      position: absolute;
+      top: calc(50vw / (768 / 100));
+      right: calc(50vw / (768 / 100));
+      z-index: 999;
+      span {
+        position: absolute;
+        top: 0;
+        right: calc(7vw / (768 / 100));
+        width: calc(80vw / (768 / 100));
+        height: calc(10vw / (768 / 100));
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: calc(70vw / (768 / 100));
+          height: calc(8vw / (768 / 100));
+          background-color: #fff;
+          border-radius: 4px;
+          transform: translate(-50%, -50%);
+        }
+        &::before {
+          transform: rotate(45deg);
+        }
+        &::after {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+
+    &__list {
+      position: absolute;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      justify-content: center;
+      gap: 4%;
+      top: 6%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      padding: calc(50vw / (768 / 100)) 0;
+      transform: translate(-50%);
+      max-width: calc(768vw / (768 / 100));
+      width: 100%;
+
+      &-link {
+        font-size: calc(26vw / (768 / 100));
+        font-weight: bolder;
+        text-align: center;
+        line-height: 1.4;
+      }
+    }
+    &-active {
+      left: 0 !important;
+    }
+  }
+
+  &__tabButton {
+    position: relative;
+    width: calc(107vw / (768 / 100));
+    height: calc(32vw / (768 / 100));
+    top: calc(-431vw / (768 / 100));
+    left: calc(611vw / (768 / 100));
+    z-index: 100;
+
+    &.close {
+      top: calc(19vw / (768 / 100));
+
+      .header__tabButton {
+        &-active:nth-of-type(1) {
+          width: 90% !important;
+          top: calc(42vw / (768 / 100)) !important;
+          left: calc(7vw / (768 / 100));
+          transform: rotate(45deg);
+          background: #fff;
+        }
+        &-active:nth-of-type(2) {
+          width: 90% !important;
+          top: calc(42vw / (768 / 100)) !important;
+          left: calc(7vw / (768 / 100));
+          background: #fff;
+          transform: rotate(-45deg);
+        }
+        &-active:nth-of-type(3) {
+          background-color: transparent !important;
+        }
+      }
+    }
+    span {
+      position: absolute;
+      left: -0px;
+      width: 100%;
+      height: calc(14vw / (768 / 100));
+      background: $pink;
+      border-radius: 10px;
+      transition: 0.3s all ease-in-out;
+      z-index: 100;
+    }
+    span:nth-of-type(1) {
+      top: calc(24vw / (768 / 100));
+    }
+
+    span:nth-of-type(2) {
+      top: calc(50vw / (768 / 100));
+      font-size: calc(18vw / (768 / 100));
+      width: 80%;
+    }
+
+    span:nth-of-type(3) {
+      top: calc(76vw / (768 / 100));
+    }
+
+    span:nth-of-type(3)::after {
+      content: "Menu";
+      position: absolute;
+      display: block;
+      top: calc(29vw / (768 / 100));
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      color: $pink;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      font-size: calc(28vw / (768 / 100));
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+    }
+    &-active:nth-of-type(1) {
+      background-color: transparent;
+    }
+
+    &-active:nth-of-type(2) {
+      background-color: transparent;
+    }
+    &-active:nth-of-type(3) {
+      background-color: transparent;
+    }
+    &-active:nth-of-type(3)::after {
+      color: transparent !important;
+    }
+    &-nav {
+      display: flex;
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: calc(70vw / (768 / 100)) 0;
+        width: 100%;
+        height: calc(100vw / (768 / 100));
+        gap: calc(15vw / (768 / 100));
+
+        span {
+          font-size: calc(26vw / (768 / 100));
+        }
+      }
+    }
+  }
+}
+#fixedElement {
+  position: relative; /* 初期状態 */
+}
+.fixed-bottom {
+  z-index: 9999;
+  position: fixed !important;
+  width: 100%; /* 画面幅いっぱいに広げる */
+  @include tab {
+    bottom: calc(16vw / (768 / 100));
+    transition: bottom 0.3s ease-in-out; /* トランジションを追加 */
+  }
+}
+
+.login {
+  :hover {
+    opacity: 0.8;
+  }
+}
+
+.login-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(71, 71, 71, 0.8);
+  display: none;
+  z-index: 9999;
+  @include tab {
+    width: 100%;
+    height: 100%;
+  }
+  &__content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+    width: 800px;
+    height: 600px;
+    background-color: #000;
+    @include tab {
+      width: 80%;
+      height: 80%;
+    }
+    @include sp {
+      width: 90%;
+      height: 50%;
+    }
+    h3 {
+      padding-left: 55px;
+      position: relative;
+      color: $pink;
+      font-size: 28px;
+      letter-spacing: 0.1em;
+      @include tab {
+        font-size: calc(28vw / (768 / 100));
+        padding-left: calc(55vw / (768 / 100));
+      }
+      @include sp {
+        font-size: calc(28vw / (440 / 100));
+      }
+      &::before {
+        content: "";
+        display: inline-block;
+        background-image: url(../img/login-icon.png);
+        background-repeat: no-repeat;
+        width: 45px;
+        height: 48px;
+        background-size: 45px 48px;
+        position: absolute;
+        top: -15px;
+        left: 0;
+        @include tab {
+          top: calc(-15vw / (768 / 100));
+          width: calc(45vw / (768 / 100));
+          height: calc(48vw / (768 / 100));
+          background-size: calc(45vw / (768 / 100)) calc(48vw / (768 / 100));
+        }
+        @include sp {
+          top: calc(0vw / (440 / 100));
+        }
+      }
+    }
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 250px;
+      @include tab {
+        width: calc(250vw / (768 / 100));
+        gap: calc(10vw / (768 / 100));
+      }
+      @include sp {
+        width: 80%;
+      }
+      input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #fff;
+        @include tab {
+          padding: calc(10vw / (768 / 100));
+        }
+      }
+    }
+    &__link {
+      display: inline-flex;
+      flex-direction: column;
+      gap: 20px;
+
+      p {
+        text-align: center;
+        font-size: 14px;
+        border-bottom: 1px solid #fff;
+        @include tab {
+          font-size: calc(14vw / (768 / 100));
+        }
+        @include sp {
+          font-size: calc(14vw / (440 / 100));
+        }
+      }
+    }
+  }
+}

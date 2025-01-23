@@ -1,0 +1,128 @@
+.girl {
+  &__list {
+    padding-left: 50px;
+    @include pc {
+      padding-left: calc(50vw / (1200 / 100));
+    }
+    @include tab {
+      padding-left: 0;
+    }
+    .cast__box__list {
+      gap: 85px 54px;
+      @include pc {
+        gap: calc(85vw / (1200 / 100)) calc(54vw / (1200 / 100));
+      }
+      @include tab {
+        gap: calc(47vw / (768 / 100)) calc(24vw / (768 / 100));
+      }
+    }
+  }
+}
+
+.cast {
+  &__box {
+    &__list {
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      flex-direction: row-reverse;
+      padding: 64px 0 0 68px;
+      gap: 54px;
+      flex-basis: 290px;
+      @include pc {
+        padding: calc(64vw / (1200 / 100)) 0 calc(0vw / (1200 / 100))
+          calc(68vw / (1200 / 100));
+        gap: calc(54vw / (1200 / 100));
+        flex-basis: calc(290vw / (1200 / 100));
+      }
+      @include tab {
+        padding: calc(55vw / (768 / 100)) 0 0 calc(31vw / (768 / 100));
+        gap: calc(47vw / (768 / 100)) calc(24vw / (768 / 100));
+      }
+    }
+  }
+}
+.girlCard {
+  width: 290px;
+  @include pc {
+    width: calc(285vw / (1200 / 100));
+  }
+  @include tab {
+    width: calc(336vw / (768 / 100));
+  }
+  &-fee {
+    font-size: 25px;
+    background-color: #da7e93;
+    color: #fff;
+    padding: 1px 0;
+    width: 100%;
+    text-align: center;
+    @include pc {
+      font-size: calc(25vw / (1200 / 100));
+    }
+    @include tab {
+      font-size: calc(28vw / (768 / 100));
+    }
+  }
+  &:last-of-type {
+    display: none;
+  }
+
+  &-img {
+    z-index: 1;
+    width: 290px;
+    height: 387px;
+    @include pc {
+      width: calc(290vw / (1200 / 100));
+      height: calc(387vw / (1200 / 100));
+    }
+    @include tab {
+      width: calc(336vw / (768 / 100));
+      height: calc(448vw / (768 / 100));
+    }
+    img {
+      width: 100%;
+    }
+  }
+  &-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding-top: 8px;
+    font-size: 27px;
+    font-family: "aqua*", $gothic;
+    color: #646464;
+    @include pc {
+      font-size: calc(27vw / (1200 / 100));
+    }
+    @include tab {
+      font-size: calc(32vw / (768 / 100));
+    }
+  }
+  &-time {
+    font-size: 24px;
+    font-family: "A-OTF リュウミン Pro", "A-OTF Rumin Pro", $mincho;
+    background-color: $blue;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 3px 0;
+    letter-spacing: -0.01em;
+    @include pc {
+      font-size: calc(24vw / (1200 / 100));
+    }
+    @include tab {
+      font-size: calc(28vw / (768 / 100));
+    }
+  }
+}
+.showMoreButton {
+  margin-top: calc(-20vw / (768 / 100));
+  font-size: calc(22vw / (768 / 100));
+  border-bottom: 1px solid #0000009a;
+  @include pc {
+    margin-top: calc(-20vw / (1200 / 100));
+    font-size: calc(22vw / (1200 / 100));
+  }
+}

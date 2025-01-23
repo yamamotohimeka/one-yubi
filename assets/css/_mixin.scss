@@ -1,0 +1,74 @@
+@mixin center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@mixin flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+$lg: 2000px;
+$pc: 1200px;
+$tab: 768px;
+$sp: 440px;
+
+@mixin lg {
+  @media (max-width: ($lg)) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media (max-width: ($pc)) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media (max-width: ($tab)) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+$black: #3c3c3c;
+$yellow: linear-gradient(
+  0deg,
+  rgba(255, 180, 0, 1) 45.34%,
+  rgba(255, 230, 0, 1) 100%
+);
+$pink: #ec7aac;
+$blue: #005a8d;
+
+.mincho {
+  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho", serif;
+}
+.gothic {
+  font-family: "Noto Sans CJK JP", "游ゴシック体", "YuGothic", "游ゴシック",
+    "Yu Gothic", sans-serif;
+}
+$gothic: "Noto Sans CJK JP", "游ゴシック体", "YuGothic", "游ゴシック",
+  "Yu Gothic", sans-serif;
+
+$mincho: "A-OTF リュウミン Pro", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+  serif;

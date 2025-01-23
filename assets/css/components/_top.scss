@@ -1,0 +1,239 @@
+.top {
+  &__swiper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 73px;
+    @include pc {
+      padding-bottom: calc(73vw / (1200 / 100));
+    }
+    @include tab {
+      padding-bottom: calc(57vw / (768 / 100));
+    }
+    .swiper {
+      width: 977px;
+      height: auto;
+      position: relative;
+      z-index: 0;
+      @include pc {
+        width: calc(977vw / (1200 / 100));
+      }
+      @include tab {
+        width: 100%;
+        padding: calc(8vw / (768 / 100));
+      }
+
+      &-wrapper {
+        display: flex;
+        width: 100%;
+      }
+      &-slide {
+        flex: 0 0 auto;
+
+        img {
+          width: 977px;
+          height: auto;
+          display: block;
+          @include pc {
+            width: calc(977vw / (1200 / 100));
+          }
+          @include tab {
+            width: 100%;
+          }
+        }
+      }
+      &-pagination {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+        gap: 25px;
+        position: absolute;
+        z-index: -1;
+        @include pc {
+          padding: calc(10vw / (1200 / 100)) 0;
+          gap: calc(25vw / (1200 / 100));
+        }
+        @include tab {
+          gap: calc(18vw / (768 / 100));
+        }
+
+        &-bullet {
+          width: 25px;
+          height: 25px;
+          background-color: #6b6b6b;
+          border-radius: 50%;
+          margin: 0 5px;
+          opacity: 1;
+          @include pc {
+            width: calc(25vw / (1200 / 100));
+            height: calc(25vw / (1200 / 100));
+          }
+          @include tab {
+            width: calc(20vw / (768 / 100));
+            height: calc(20vw / (768 / 100));
+          }
+
+          &-active {
+            background-color: #000;
+          }
+
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  }
+
+  &__diary {
+    padding-top: 75px;
+    @include pc {
+      padding-top: calc(75vw / (1200 / 100));
+    }
+    @include tab {
+      padding-top: calc(116vw / (768 / 100));
+    }
+    &__list {
+      padding-top: 57px;
+      @include pc {
+        padding-top: calc(57vw / (1200 / 100));
+      }
+      @include tab {
+        padding-top: calc(68vw / (768 / 100));
+      }
+      .cast__box__list {
+        padding: 0 51px;
+        gap: 14px;
+        @include pc {
+          gap: calc(14vw / (1200 / 100));
+        }
+        @include tab {
+          padding: 0 0 0 calc(21vw / (768 / 100));
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: flex-start;
+          overflow-x: auto;
+          gap: 0 calc(28vw / (768 / 100));
+        }
+        .diary {
+          border: 1px solid $pink;
+          width: 24%;
+          padding: 15px 17px;
+          @include pc {
+            width: 23.5%;
+            padding: calc(15vw / (1200 / 100)) calc(17vw / (1200 / 100));
+          }
+          @include tab {
+            flex-wrap: wrap;
+            align-items: flex-start;
+            margin-bottom: calc(10vw / (768 / 100));
+            padding: calc(15vw / (768 / 100)) calc(17vw / (768 / 100));
+            width: calc(641vw / (768 / 100));
+            height: calc(348vw / (768 / 100));
+            gap: calc(41vw / (768 / 100)) calc(38vw / (768 / 100));
+
+            &-img {
+              width: calc(229vw / (768 / 100));
+              img {
+                width: calc(229vw / (768 / 100));
+              }
+            }
+          }
+          &-name {
+            font-size: 24px;
+            @include pc {
+              font-size: calc(24vw / (1200 / 100));
+            }
+            @include tab {
+              font-size: calc(30vw / (768 / 100));
+            }
+          }
+          &-text {
+            font-size: 16px;
+            @include pc {
+              font-size: calc(16vw / (1200 / 100));
+            }
+            @include tab {
+              font-size: calc(28vw / (768 / 100));
+              padding: 0;
+              word-break: break-all;
+              min-width: 22em;
+
+              p {
+                word-break: break-all;
+                max-width: calc(338vw / (768 / 100));
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-link {
+      margin: 36px 79px auto auto;
+      padding: 17px 0;
+      width: 217px;
+      background-color: $pink;
+      color: #fff;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 20px;
+      font-family: "小塚ゴシック Pro", "Kozuka Gothic Pro", $gothic;
+      @include pc {
+        margin: calc(36vw / (1200 / 100)) calc(79vw / (1200 / 100)) auto auto;
+        padding: calc(17vw / (1200 / 100)) 0;
+        width: calc(217vw / (1200 / 100));
+        font-size: calc(20vw / (1200 / 100));
+      }
+      @include tab {
+        margin: calc(34vw / (768 / 100)) calc(41vw / (768 / 100)) auto auto;
+        padding: calc(19vw / (768 / 100)) 0;
+        width: calc(272vw / (768 / 100));
+        font-size: calc(28vw / (768 / 100));
+      }
+    }
+  }
+
+  &__schedule {
+    padding-top: 125px;
+    @include pc {
+      padding-top: calc(125vw / (1200 / 100));
+    }
+    @include tab {
+      padding-top: calc(104vw / (768 / 100));
+      padding-bottom: calc(104vw / (768 / 100));
+    }
+    &-link {
+      margin: 36px 139px auto auto;
+      padding: 17px 0;
+      width: 217px;
+      background-color: $pink;
+      color: #fff;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 20px;
+      @include pc {
+        margin: calc(36vw / (1200 / 100)) calc(139vw / (1200 / 100)) auto auto;
+        padding: calc(17vw / (1200 / 100)) 0;
+        width: calc(217vw / (1200 / 100));
+        font-size: calc(20vw / (1200 / 100));
+      }
+      @include tab {
+        margin: calc(34vw / (768 / 100)) calc(41vw / (768 / 100)) auto auto;
+        padding: calc(19vw / (768 / 100)) 0;
+        width: calc(272vw / (768 / 100));
+        font-size: calc(28vw / (768 / 100));
+      }
+    }
+    .cast__box__list {
+      padding: 87px 0 0 111px;
+      @include pc {
+        padding: calc(87vw / (1200 / 100)) 0 calc(0vw / (1200 / 100))
+          calc(111vw / (1200 / 100));
+      }
+      @include tab {
+        padding: calc(55vw / (768 / 100)) 0 0 calc(31vw / (768 / 100));
+      }
+    }
+  }
+}
