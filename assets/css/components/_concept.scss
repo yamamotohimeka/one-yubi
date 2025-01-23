@@ -45,10 +45,10 @@
       gap: calc(54vw / (1200 / 100));
     }
     @include tab {
-      padding: 709px 0;
+      padding: calc(709vw / (768 / 100)) 0;
       align-items: center;
-      gap: 72px;
-      width: 671px;
+      gap: calc(72vw / (768 / 100));
+      width: calc(671vw / (768 / 100));
       margin: 0 auto;
     }
 

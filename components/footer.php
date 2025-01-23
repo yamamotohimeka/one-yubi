@@ -124,7 +124,7 @@
 
 
 
-    <div class="footer__nav">
+    <div class="footer__nav pc">
       <ul class="footer__nav__list">
         <li class="footer__nav__list-link">
           <a href="<?php echo $path; ?>" class="footer__link">

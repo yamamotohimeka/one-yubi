@@ -74,7 +74,7 @@
           }
 
           @include sp {
-            padding: calc(70vw / (768 / 100)) 0 0 0;
+            padding: calc(70vw / (440 / 100)) 0 0 0;
           }
           .diary {
             border: 1px solid $pink;
