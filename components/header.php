@@ -67,12 +67,12 @@
                 </a>
               </li>
 
-              <li class="header__nav__list-link <?php if ($templete === 'diary') echo 'active'; ?>">
+              <li class="header__nav__list-link <?php if ($templete === 'concept') echo 'active'; ?>">
                 <a href="<?php echo $path; ?>concept.php">
                   <p>CONCEPT</p>
                 </a>
               </li>
-              <li class="header__nav__list-link <?php if ($templete=== 'cast') echo 'active'; ?>">
+              <li class="header__nav__list-link <?php if ($templete=== 'girl') echo 'active'; ?>">
                 <a href="<?php echo $path; ?>girl.php">
                   <p>CAST</p>
                 </a>
@@ -144,7 +144,7 @@
               CONCEPT
             </a>
           </li>
-          <li class="header__tabNav__list-link <?php if ($templete === 'cast') echo 'active'; ?>">
+          <li class="header__tabNav__list-link <?php if ($templete === 'girl') echo 'active'; ?>">
             <a href="<?php echo $path; ?>girl.php" class="header__link">
               CAST
             </a>

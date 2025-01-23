@@ -21,7 +21,7 @@
               </a>
             </li>
 
-            <li class="footer__nav__list-link <?php if ($templete === 'diary') echo 'active'; ?>">
+            <li class="footer__nav__list-link <?php if ($templete === 'concept') echo 'active'; ?>">
               <a href="<?php echo $path; ?>concept.php">
                 <p>CONCEPT</p>
               </a>
@@ -183,7 +183,7 @@
       <a href="tel:0120-947-854" class="footer__tab__nav__btn">
         <img src="<?php echo $path; ?>assets/img/telNav-btn.png" alt="電話">
       </a>
-      <a href="line" class="footer__tab__nav__btn">
+      <a href="https://line.me/R/ti/p/XGQ3edgCC5" class="footer__tab__nav__btn" target="_blank">
         <img src="<?php echo $path; ?>assets/img/line-icon.png" alt="LINE">
       </a>
       <div class="footer__tabButton__bg footer__tab__nav__btn">

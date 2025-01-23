@@ -115,6 +115,7 @@
           overflow-x: auto;
           gap: 0 calc(28vw / (768 / 100));
         }
+
         .diary {
           border: 1px solid $pink;
           width: 24%;
@@ -226,13 +227,25 @@
       }
     }
     .cast__box__list {
-      padding: 87px 0 0 111px;
+      padding: 0 0 0 111px;
       @include pc {
-        padding: calc(87vw / (1200 / 100)) 0 calc(0vw / (1200 / 100))
-          calc(111vw / (1200 / 100));
+        padding: 0 0 calc(0vw / (1200 / 100)) calc(60vw / (1200 / 100));
       }
-      @include tab {
-        padding: calc(55vw / (768 / 100)) 0 0 calc(31vw / (768 / 100));
+
+      &:first-of-type {
+        &::before {
+          content: "";
+          display: block;
+          top: 0;
+          left: 0;
+          width: 700px;
+          @include pc {
+            width: calc(1200vw / (2000 / 100));
+          }
+          @include tab {
+            width: calc(600vw / (768 / 100));
+          }
+        }
       }
     }
   }

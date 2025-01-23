@@ -58,7 +58,7 @@ $(function () {
   });
 
   // フッターのナビゲーションボタンをクリック
-  $(`.footer__tab__nav__btn`).on("click", (event) => {
+  $(`.footer__tabButton__bg`).on("click", (event) => {
     $(".header__tabNav").toggleClass("header__tabNav-active"); // メニューの開閉
     $(".header__tabButton span").toggleClass("header__tabButton-active");
   });

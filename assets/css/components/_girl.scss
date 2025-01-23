@@ -9,11 +9,28 @@
     }
     .cast__box__list {
       gap: 85px 54px;
+
+      &:first-of-type {
+        &::before {
+          content: "";
+          display: block;
+          top: 0;
+          left: 0;
+          width: 700px;
+          @include pc {
+            width: calc(1200vw / (2000 / 100));
+          }
+          @include tab {
+            width: calc(336vw / (768 / 100));
+          }
+        }
+      }
       @include pc {
         gap: calc(85vw / (1200 / 100)) calc(54vw / (1200 / 100));
       }
       @include tab {
         gap: calc(47vw / (768 / 100)) calc(24vw / (768 / 100));
+        padding: 0 calc(36vw / (768 / 100));
       }
       @include sp {
         gap: calc(30vw / (440 / 100)) calc(10vw / (440 / 100));
@@ -26,20 +43,19 @@
   &__box {
     &__list {
       display: flex;
-      justify-content: flex-end;
+      justify-content: flex-start;
       flex-wrap: wrap;
-      flex-direction: row-reverse;
-      padding: 64px 0 0 68px;
+      flex-direction: row;
+      padding: 0 0 0 68px;
       gap: 54px;
       flex-basis: 290px;
       @include pc {
-        padding: calc(64vw / (1200 / 100)) 0 calc(0vw / (1200 / 100))
-          calc(68vw / (1200 / 100));
+        padding: 0 0 calc(0vw / (1200 / 100)) calc(68vw / (1200 / 100));
         gap: calc(54vw / (1200 / 100));
         flex-basis: calc(290vw / (1200 / 100));
       }
       @include tab {
-        padding: calc(55vw / (768 / 100)) 0 0 calc(31vw / (768 / 100));
+        padding: 0 0 0 calc(31vw / (768 / 100));
         gap: calc(47vw / (768 / 100)) calc(24vw / (768 / 100));
       }
       @include sp {
