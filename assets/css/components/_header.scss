@@ -11,8 +11,10 @@
       width: 100%;
       height: 100vh;
       max-height: 739px;
+      object-fit: cover;
       @include lg {
         max-height: calc(739vw / (2000 / 100));
+        width: auto;
       }
       @include pc {
         max-height: calc(739vw / (1200 / 100));
