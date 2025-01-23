@@ -62,7 +62,7 @@
 
         <div class="footer__tel">
           <img src="<?php echo $path; ?>assets/img/tel-icon-footer.png" alt="お姉さんの指先">
-          <a href="tel:0120-947-854">0120-868-864</a>
+          <a href="tel:0120-868-846">0120-868-846</a>
         </div>
       </div>
 
@@ -180,7 +180,7 @@
 
 
     <div class="footer__tab__nav">
-      <a href="tel:0120-947-854" class="footer__tab__nav__btn">
+      <a href="tel:0120-868-846" class="footer__tab__nav__btn">
         <img src="<?php echo $path; ?>assets/img/telNav-btn.png" alt="電話">
       </a>
       <a href="https://line.me/R/ti/p/XGQ3edgCC5" class="footer__tab__nav__btn" target="_blank">

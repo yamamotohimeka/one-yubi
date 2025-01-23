@@ -41,7 +41,7 @@
 
       <div class="header__tel">
         <img src="<?php echo $path; ?>assets/img/tel-icon.png" alt="お姉さんの指先">
-        <a href="tel:0120-947-854">0120-868-864</a>
+        <a href="tel:0120-868-846">0120-868-846</a>
       </div>
 
 
