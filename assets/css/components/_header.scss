@@ -45,10 +45,10 @@
     font-size: 49px;
     color: $pink;
     letter-spacing: -0.13rem;
-    width: 439px;
+    gap: 30px;
     @include lg {
       font-size: calc(58vw / (2000 / 100));
-      width: calc(439vw / (2000 / 100));
+      gap: calc(30vw / (2000 / 100));
     }
     @include tab {
       display: none;
