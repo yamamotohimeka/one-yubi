@@ -128,7 +128,7 @@
             同性に身の上の込み入った話をするのが<br class="tab">イヤって方、男性相手だとうまく話せない<br class="pc">から<br
               class="tab">イヤって方…両方がいらっしゃいますよね？<br class="tab">私たちはそのどちらもの理由や<br class="pc">女性の心境を<br
               class="tab">可能な限り理解して最適なマネージメントが<br class="tab">できるように、男女両方の<br class="pc">面接官を用意して<br
-              class="tab">います。スケジュール面で可能な限り調整<br class="tab">いたしますので、<br class="pc">ご希望があればお伝えください。<br
+              class="tab">います。スケジュール面で可能な限り調整<br class="tab">いたしますので<br class="pc">ご希望があればお伝えください。<br
               class="tab">ちなみに、マンガの世界じゃ、強面の人がすぐに<br>
             出てくるイメージがあるけどそんな事は<br class="tab">ありませんので安心してくださいね（笑）
           </p>

@@ -230,7 +230,6 @@
       font-size: 27px;
       letter-spacing: -0.035rem;
       line-height: 1.45;
-      font-feature-settings: "palt";
       @include pc {
         font-size: calc(27vw / (1200 / 100));
       }

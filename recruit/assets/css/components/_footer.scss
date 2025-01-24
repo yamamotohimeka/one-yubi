@@ -169,6 +169,19 @@
     }
   }
 
+  &__tabLink {
+    font-size: calc(26vw / (768 / 100));
+    font-weight: 200;
+    padding: calc(100vw / (768 / 100)) 0 calc(100vw / (768 / 100));
+    text-align: center;
+    a {
+      border-bottom: calc(1vw / (768 / 100)) solid;
+    }
+    @include sp {
+      font-size: calc(20vw / (440 / 100));
+    }
+  }
+
   /********************************************
 * ハンバーガーメニュー
 ********************************************/

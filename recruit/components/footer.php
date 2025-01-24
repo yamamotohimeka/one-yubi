@@ -39,6 +39,7 @@
     </div>
   </div>
   <div class="tab">
+    <div class="footer__tabLink"><a href=".<?php echo $path; ?>">営業サイトはこちらから</a></div>
     <div class="footer__tabButton-wrapper">
       <button class="footer__tabButton__link">
         <a href="tel:0120-868-846">

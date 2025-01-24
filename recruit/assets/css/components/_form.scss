@@ -46,9 +46,10 @@
       }
       @include tab {
         font-size: calc(20vw / (768 / 100));
-        right: 17px;
-        bottom: 84px;
+        right: calc(17vw / (768 / 100));
+        bottom: calc(84vw / (768 / 100));
         font-family: $mincho;
+        padding: calc(6vw / (768 / 100)) calc(14vw / (768 / 100));
       }
     }
   }

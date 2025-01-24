@@ -8,7 +8,7 @@
           <img src="<?php echo $path; ?>assets/images/about-point1.png" alt="ポイント1">
           <p>未経験でも大丈夫です！ほとんどの<br class="tab">女の子が未経験からのスタート<br>
             見たり・触ったりするだけなので<br class="tab">講習もなしです！<br>
-            面接後最速30分で入店可能です</p>
+            面接後最速30分で入店可能です。</p>
         </li>
         <li class="about__point__list-item fadeUp2">
           <img src="<?php echo $path; ?>assets/images/about-point2.png" alt="ポイント2">
