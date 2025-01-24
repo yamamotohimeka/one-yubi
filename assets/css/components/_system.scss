@@ -18,6 +18,7 @@
         width: calc(850vw / (1200 / 100));
       }
       @include tab {
+        font-size: calc(29vw / (768 / 100));
         width: calc(446vw / (768 / 100));
       }
 

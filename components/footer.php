@@ -183,15 +183,8 @@
       <a href="tel:0120-868-846" class="footer__tab__nav__btn">
         <img src="<?php echo $path; ?>assets/img/telNav-btn.png" alt="電話">
       </a>
-      <a href="https://line.me/R/ti/p/XGQ3edgCC5" class="footer__tab__nav__btn" target="_blank">
-        <img src="<?php echo $path; ?>assets/img/line-icon.png" alt="LINE">
-      </a>
-      <div class="footer__tabButton__bg footer__tab__nav__btn">
-        <div class=" footer__tabButton">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+      <div class="footer__tabButton__bg footer__tab__nav__btn footer__tabButton">
+        <img src="<?php echo $path; ?>assets/img/menuNav-btn.png" alt="電話">
       </div>
     </div>
 

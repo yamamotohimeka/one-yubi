@@ -111,22 +111,16 @@
       bottom: 0;
       left: 0;
       right: 0;
-      background-color: $pink;
       max-width: calc(768vw / (768 / 100));
-      width: 100%;
       img {
-        &:first-child {
-          width: calc(139vw / (768 / 100));
-        }
-        &:nth-child(2) {
-          width: calc(154vw / (768 / 100));
-        }
+        width: calc(107vw / (768 / 100));
       }
       &__btn {
-        width: 33.333%;
+        width: 49.9%;
         padding: calc(20vw / (768 / 100)) 0;
         gap: calc(15vw / (768 / 100));
-        height: calc(196vw / (768 / 100));
+        height: calc(90vw / (768 / 100));
+        background-color: $pink;
         text-align: center;
       }
     }
@@ -136,70 +130,9 @@
         position: relative;
         z-index: 100;
       }
-      span {
-        position: absolute;
-        left: calc(80vw / (768 / 100));
-        width: 100%;
-        max-width: calc(124vw / (768 / 100));
-
-        height: calc(14vw / (768 / 100));
-        background: #fff;
-        border-radius: 10px;
-        transition: 0.3s all ease-in-out;
-        z-index: 100;
-      }
-      span:nth-of-type(1) {
-        top: calc(34vw / (768 / 100));
-        width: 100%;
-      }
-
-      span:nth-of-type(2) {
-        top: calc(60vw / (768 / 100));
-        font-size: calc(18vw / (768 / 100));
-        width: 80%;
-      }
-
-      span:nth-of-type(3) {
-        top: calc(86vw / (768 / 100));
-      }
-      span:nth-of-type(3)::after {
-        content: "Menu";
-        position: absolute;
-        display: block;
-        top: calc(39vw / (768 / 100));
-        left: 50%;
-        transform: translateX(-50%);
-        -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        color: #fff;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-          sans-serif;
-        font-size: calc(28vw / (768 / 100));
-        text-transform: uppercase;
-        font-weight: 400;
-        letter-spacing: 0.01em;
-      }
-      &-active:nth-of-type(1) {
-        width: 90% !important;
-        top: calc(42vw / (768 / 100)) !important;
-        left: calc(7vw / (768 / 100));
-        transform: rotate(45deg);
-        background: #fff;
-      }
-      &-active:nth-of-type(2) {
-        width: 90% !important;
-        top: calc(42vw / (768 / 100)) !important;
-        left: calc(7vw / (768 / 100));
-        background: #fff;
-        transform: rotate(-45deg);
-      }
-      &-active:nth-of-type(3) {
-        background-color: transparent !important;
-      }
-      &-active:nth-of-type(3)::after {
-        content: "Close" !important;
-        color: #fff !important;
+      img {
+        padding-top: calc(5vw / (768 / 100));
+        width: calc(152vw / (768 / 100));
       }
 
       &-nav {
