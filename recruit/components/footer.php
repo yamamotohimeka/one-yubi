@@ -1,11 +1,14 @@
 <footer class="footer">
 
   <div class="container">
-    <div class="footer__flex pc">
-      <div class="footer__logo">
-        <a href="#">
-          <img src="<?php echo $path; ?>assets/images/logo.png" alt=" お姉さんの指先のロゴ">
-        </a>
+    <div class="pc">
+      <div class="footer__flex">
+        <div class="footer__logo">
+          <a href="#">
+            <img src="<?php echo $path; ?>assets/images/logo.png" alt=" お姉さんの指先のロゴ">
+          </a>
+        </div>
+        <div class="footer__link"><a href=".<?php echo $path; ?>" target="_blank">営業サイトはこちらから</a></div>
       </div>
       <nav class="footer__nav  pc">
         <ul class="footer__nav__list">
