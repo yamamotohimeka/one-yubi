@@ -12,7 +12,6 @@
             <img src="<?php echo $path; ?>assets/images/top-img1.png" alt="採用率99%">
           </div>
           <div class="top__text-box1">
-            <p>もちっとホイップコース</p>
             <p><span>60</span>分<span>12000</span>円</p>
             <p>ハンドサービスのコースバック</p>
             <img src="<?php echo $path; ?>assets/images/top-text-3p.png" alt="お触りなし・キスなし・フェラなし">
@@ -58,7 +57,6 @@
         </div>
 
         <div class="top__text-box1">
-          <p>もちっとホイップコース</p>
           <p><span>60</span>分<span>12000</span>円</p>
           <p>ハンドサービスのコースバック</p>
         </div>

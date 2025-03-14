@@ -70,35 +70,6 @@
     p {
       color: $blue;
       &:first-child {
-        font-size: 30px;
-        @include pc {
-          font-size: calc(30vw / (1200 / 100));
-        }
-        @include tab {
-          font-size: calc(42vw / (768 / 100));
-        }
-        &::after {
-          content: "";
-          display: inline-block;
-          width: 15px;
-          height: 30px;
-          background: url(../images/top-text-deco.png);
-          background-size: 15px 21px;
-          background-position: top;
-          background-repeat: no-repeat;
-          @include pc {
-            background-size: calc(15vw / (1200 / 100)) calc(21vw / (1200 / 100));
-            width: calc(15vw / (1200 / 100));
-            height: calc(21vw / (1200 / 100));
-          }
-          @include tab {
-            background-size: calc(20vw / (768 / 100)) calc(29vw / (768 / 100));
-            width: calc(20vw / (768 / 100));
-            height: calc(40vw / (768 / 100));
-          }
-        }
-      }
-      &:nth-child(2) {
         font-size: 60px;
         letter-spacing: -0.19rem;
         @include pc {
@@ -118,7 +89,7 @@
           }
         }
       }
-      &:nth-child(3) {
+      &:nth-child(2) {
         margin-bottom: 22px;
         padding-top: 4px;
         color: #fff;
