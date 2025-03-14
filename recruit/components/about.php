@@ -12,7 +12,7 @@
         </li>
         <li class="about__point__list-item fadeUp2">
           <img src="<?php echo $path; ?>assets/images/about-point2.png" alt="ポイント2">
-          <p>受付型のお店なので自分が接客する<br class="tab">お客様の顔は<br class="pc">先に確認できます<br class="tab">身バレの心配一切なしです。<br>
+          <p>受付型のお店なので自分が接客する<br class="tab">お客様の顔は<br class="pc">先に確認できます。<br class="tab">身バレの心配一切なしです。<br>
             又完全個室待機なので他の女の子に<br class="tab">会う事もございません。</p>
         </li>
         <li class="about__point__list-item fadeUp3">
@@ -45,7 +45,7 @@
           <dt>
             タトゥー・妊娠線OK! </dt>
           <dd>
-            脱がないお仕事なので体系もそんなに気に<br>
+            脱がないお仕事なので体型もそんなに気に<br>
             しなくてOK！勿論キズなども関係なし！
           </dd>
         </div>
