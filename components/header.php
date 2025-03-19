@@ -31,7 +31,18 @@
   <meta name="twitter:card" content="summary_large_image" />
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <link href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" rel="stylesheet">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H0GNEPF297"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
 
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-H0GNEPF297');
+  </script>
 </head>
 
 <body>
