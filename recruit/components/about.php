@@ -45,8 +45,8 @@
           <dt>
             タトゥー・妊娠線OK! </dt>
           <dd>
-            脱がないお仕事なので体型もそんなに気に<br>
-            しなくてOK！勿論キズなども関係なし！
+            脱がないお仕事なので体型も<br>
+            気にしなくてOK！勿論キズなども関係なし！
           </dd>
         </div>
         <div class="about__description__list-item">

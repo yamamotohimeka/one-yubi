@@ -355,7 +355,7 @@
     }
     @include tab {
       font-size: calc(25vw / (768 / 100));
-      padding: calc(22vw / (768 / 100)) 0 0 0;
+      padding: 0;
       text-align: center;
       line-height: 1.35;
     }
