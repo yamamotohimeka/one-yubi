@@ -192,6 +192,15 @@
     }
   }
 
+  &__banner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0 1em;
+    padding: 2em 0;
+  }
+
   /********************************************
 * ハンバーガーメニュー
 ********************************************/

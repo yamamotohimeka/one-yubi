@@ -62,6 +62,55 @@
     </div>
   </div>
 
+  <div class="container">
+    <div class="footer__banner">
+      <a rel="nofollow" href="https://kansai.qzin.jp/oneyubi/?v=official" target="_blank"><img
+          src="https://ad.qzin.jp/img/vanilla468-60.gif" width="468" border="0" alt="お姉さんの指先で稼ぐならバニラ求人"></a>
+
+      <a href="https://www.bwork.net/" target="_blank" rel="noopener"><img
+          src="<?php echo $path; ?>assets/images/banner/bwork88x31.gif" alt="Bwork"></a>
+      <a href="https://q-pri.com/shop_list/area/102/104" target="_blank" rel="noopener"><img
+          src="<?php echo $path; ?>assets/images/banner/q-puri200x40.png" alt="Qプリ"></a>
+      <a href="https://q-pri.com/shop_list/area/102/104" target="_blank" rel="noopener"><img
+          src="<?php echo $path; ?>assets/images/banner/q-puri468x60.png" alt="Qプリ"></a>
+      <a href="https://q-pri.com/shop_list/area/102/104" target="_blank" rel="noopener"><img
+          src="<?php echo $path; ?>assets/images/banner/q-puri640x100.png" alt="Qプリ"></a>
+      <a href="https://www.r-30.net/kansai/" target="_blank" rel="noopener"><img
+          src="<?php echo $path; ?>assets/images/banner/r-net88-31.jpg" alt="R-30.net"></a>
+      <a href="https://www.r-30.net/kansai/" target="_blank" rel="noopener"><img
+          src="<?php echo $path; ?>assets/images/banner/r-net192-53.gif" alt="R-30.net"></a>
+      <a href="https://www.r-30.net/kansai/" target="_blank" rel="noopener"><img
+          src="<?php echo $path; ?>assets/images/banner/r-net468-60.gif" alt="R-30.net"></a>
+      <a href="https://www.15navi.com/osaka/" target="_blank" rel="noopener"><img
+          src="<?php echo $path; ?>assets/images/banner/ichigo-right.png" alt="いちごなび"></a>
+      <a href="https://www.15navi.com/osaka/ma310/aa201/" target="_blank" rel="noopener"><img
+          src="<?php echo $path; ?>assets/images/banner/ichigo-left.png" alt="いちごなび"></a>
+      <a href="http://kirajob.com" target="_blank" rel="noopener"><img
+          src="<?php echo $path; ?>assets/images/banner/kirakira.jpg" alt="キラキラジョブ"></a>
+      <a href="https://happyhellowork.com/rank.php?s=4" target="_blank" rel="noopener"><img
+          src="<?php echo $path; ?>assets/images/banner/hhw.gif" alt="ハッピーハローワーク"></a>
+      <a href="https://work-mikke.jp/" target="_blank" rel="noopener"><img
+          src="<?php echo $path; ?>assets/images/banner/mikke.jpg" alt="みっけ"></a>
+      <a href="https://kansai-fuu.info/" target="_blank" rel="noopener"><img
+          src="<?php echo $path; ?>assets/images/banner/oosakafuzoku.jpg" alt="大阪風俗求人情報"></a>
+      <a href="https://www.dekasegichan.com/" target="_blank" rel="noopener"><img
+          src="<?php echo $path; ?>assets/images/banner/dekasegichan.jpg" alt="出稼ぎちゃん"></a>
+      <a href="http://dekasegifuzoku.com/" target="_blank" rel="noopener"><img
+          src="<?php echo $path; ?>assets/images/banner/dekasegi-com.gif" alt="出稼ぎドットコム"></a>
+      <a href="https://no-fuzoku.com/" target="_blank" rel="noopener"><img
+          src="<?php echo $path; ?>assets/images/banner/fuzokujanai.jpg" alt="風俗じゃない！日払い高収入求人"></a>
+      <a href="https://ona-club.com/" target="_blank" rel="noopener"><img
+          src="<?php echo $path; ?>assets/images/banner/onakura.gif" alt="オナクラ風俗.com"></a>
+      <a href="https://www.fucolle.com/kansai/" target="_blank" rel="noopener"><img
+          src="<?php echo $path; ?>assets/images/banner/fukore.gif" alt="フーコレ関西"></a>
+      <a href="https://fujoho.jp/" target="_blank" rel="noopener"><img
+          src="<?php echo $path; ?>assets/images/banner/kutikomi.gif" alt="口コミ情報局"></a>
+      <a href="https://www.tekoki-no1.com/" target="_blank" rel="noopener"><img
+          src="<?php echo $path; ?>assets/images/banner/tekoki.gif" alt="手コキが一番"></a>
+      <a href="https://www.tekoki-fuzoku-joho.com/" target="_blank" rel="noopener"><img
+          src="<?php echo $path; ?>assets/images/banner/maniax.jpg" alt="手コキ風俗マニアックス"></a>
+    </div>
+  </div>
 
 
 </footer>
