@@ -109,7 +109,7 @@
                 </a>
               </li>
               <li class="header__nav__list-link <?php if ($templete === 'recruit') echo 'active'; ?>">
-                <a href="<?php echo $path; ?>recruit">
+                <a href="http://one-yubi.info/" target="_blank">
                   <p>RECRUIT</p>
                 </a>
               </li>
@@ -181,7 +181,7 @@
             </a>
           </li>
           <li class="header__tabNav__list-link <?php if ($templete === 'recruit') echo 'active'; ?>">
-            <a href="<?php echo   $path; ?>recruit" class="header__link">
+            <a href="http://one-yubi.info/" target="_blank">
               RECRUIT
             </a>
           </li>
