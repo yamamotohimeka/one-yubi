@@ -8,7 +8,7 @@
             <img src="<?php echo $path; ?>assets/images/logo.png" alt=" お姉さんの指先のロゴ">
           </a>
         </div>
-        <div class="footer__link"><a href=".<?php echo $path; ?>" target="_blank">営業サイトはこちらから</a></div>
+        <div class="footer__link"><a href="http://one-yubi.info/" target="_blank">営業サイトはこちらから</a></div>
       </div>
       <nav class="footer__nav  pc">
         <ul class="footer__nav__list">
@@ -42,7 +42,7 @@
     </div>
   </div>
   <div class="tab">
-    <div class="footer__tabLink"><a href=".<?php echo $path; ?>">営業サイトはこちらから</a></div>
+    <div class="footer__tabLink"><a href="http://one-yubi.info/" target="_blank">営業サイトはこちらから</a></div>
     <div class="footer__tabButton-wrapper">
       <button class="footer__tabButton__link">
         <a href="tel:0120-868-846">
