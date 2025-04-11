@@ -8,8 +8,8 @@
         <p>60分コースの最も簡単なメニューでも</p>
       </div>
       <div class="salary__box__text-2 fadeUp2">
-        <p><span>9000</span>円以上</p>
-        <p><span>12000</span>円以上</p>
+        <p><span>9,000</span>円以上</p>
+        <p><span>12,000</span>円以上</p>
         <p>病気の心配一切なし!</p>
       </div>
       <div class="salary__box__img">
@@ -18,7 +18,7 @@
     </div>
 
     <div class="salary__box2">
-      <p>お給料の説明の際最も多い質問が<br class="tab">「売り上げノルマや遅刻等での罰金があるの？」ですが・・・<br class="pc">当店はございません。<br
+      <p>お給料の説明の際、最も多い質問が<br class="tab">「売り上げノルマや遅刻等での罰金があるの？」ですが・・・<br class="pc">当店はございません。<br
           class="tab">例えばお子さんの急な発熱やペットの体調不良などご自身以外のことで<br class="pc">出勤できない事も<br class="tab">承知しております。<br
           class="tab">ただし必ず出勤1時間前には連絡ください。<br>
         体調が悪い場合は後報告でも構いません。<br>
