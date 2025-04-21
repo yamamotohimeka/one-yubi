@@ -130,34 +130,34 @@ function token_chk($token)
             <a href="#">
               <img src="<?php echo $path; ?>assets/images/logo.png" alt="お姉さんの指先">
             </a>
-            </ｄ>
-            <ul class="header__tabNav__list">
-              <li class="header__tabNav__list-link">
-                <a href="#top">
-                  TOP
-                </a>
-              </li>
-              <li class="header__tabNav__list-link">
-                <a href="#about">
-                  初めての方へ
-                </a>
-              </li>
-              <li class="header__tabNav__list-link">
-                <a href="#salary">
-                  給料について
-                </a>
-              </li>
-              <li class="header__tabNav__list-link">
-                <a href="#faq">
-                  よくある質問
-                </a>
-              </li>
-              <li class="header__tabNav__list-link">
-                <a href="#contact">
-                  応募
-                </a>
-              </li>
-            </ul>
+          </div>
+          <ul class="header__tabNav__list">
+            <li class="header__tabNav__list-link">
+              <a href="#top">
+                TOP
+              </a>
+            </li>
+            <li class="header__tabNav__list-link">
+              <a href="#about">
+                初めての方へ
+              </a>
+            </li>
+            <li class="header__tabNav__list-link">
+              <a href="#salary">
+                給料について
+              </a>
+            </li>
+            <li class="header__tabNav__list-link">
+              <a href="#faq">
+                よくある質問
+              </a>
+            </li>
+            <li class="header__tabNav__list-link">
+              <a href="#contact">
+                応募
+              </a>
+            </li>
+          </ul>
         </nav>
       </div>
     </div>
