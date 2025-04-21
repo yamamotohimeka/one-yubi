@@ -52,7 +52,7 @@
               </a>
             </li>
             <li class="footer__nav__list-link <?php if ($templete === 'recruit') echo 'active'; ?>">
-              <a href="http://one-yubi.info/" target="_blank">
+              <a href="https://one-yubi.net/" target="_blank">
                 <p>RECRUIT</p>
               </a>
             </li>
