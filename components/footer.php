@@ -89,10 +89,6 @@
           src="<?php echo $path; ?>assets/img/banner/r-net192-53.gif" alt="R-30.net"></a>
       <a href="https://www.r-30.net/kansai/" target="_blank" rel="noopener"><img
           src="<?php echo $path; ?>assets/img/banner/r-net468-60.gif" alt="R-30.net"></a>
-      <a href="https://www.15navi.com/osaka/" target="_blank" rel="noopener"><img
-          src="<?php echo $path; ?>assets/img/banner/ichigo-right.png" alt="いちごなび"></a>
-      <a href="https://www.15navi.com/osaka/ma310/aa201/" target="_blank" rel="noopener"><img
-          src="<?php echo $path; ?>assets/img/banner/ichigo-left.png" alt="いちごなび"></a>
       <a href="http://kirajob.com" target="_blank" rel="noopener"><img
           src="<?php echo $path; ?>assets/img/banner/kirakira.jpg" alt="キラキラジョブ"></a>
       <a href="https://happyhellowork.com/rank.php?s=4" target="_blank" rel="noopener"><img
