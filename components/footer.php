@@ -127,54 +127,6 @@
   </div>
 
   <div class="container tab">
-    <div class="footer__nav pc">
-      <ul class="footer__nav__list">
-        <li class="footer__nav__list-link">
-          <a href="<?php echo $path; ?>" class="footer__link">
-            <span>TOP</span>
-          </a>
-        </li>
-        <li class="border"></li>
-        <li class="footer__nav__list-link">
-          <a href="<?php echo $path; ?>girl.php" class="footer__link">
-            <span>女の子一覧</span>
-          </a>
-        </li>
-        <li class="border"></li>
-        <li class="footer__nav__list-link">
-          <a href="<?php echo $path; ?>schedule.php" class="footer__link">
-            <span>出勤情報</span>
-          </a>
-        </li>
-        <li class="border"></li>
-        <li class="footer__nav__list-link">
-          <a href="<?php echo $path; ?>system.php" class="footer__link">
-            <span>システム</span>
-          </a>
-        </li>
-        <li class="border"></li>
-        <li class="footer__nav__list-link">
-          <a href="<?php echo $path; ?>event.php" class="footer__link">
-            <span>イベント</span>
-          </a>
-        </li>
-        <li class="border"></li>
-        <li class="footer__nav__list-link">
-          <a href="<?php echo $path; ?>access.php" class="footer__link">
-            <span>アクセス</span>
-          </a>
-        </li>
-        <li class="border"></li>
-        <li class="footer__nav__list-link">
-          <a href="../recruit" class="footer__link" target="_blank">
-            <span>求人サイト</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="container tab">
     <div class="footer__tab__nav">
       <a href="tel:0120-868-846" class="footer__tab__nav__btn">
         <img src="<?php echo $path; ?>assets/img/telNav-btn.png" alt="電話">
