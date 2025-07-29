@@ -60,8 +60,11 @@
       </div>
     </div>
   </div>
+  <div class="footer__topBtn tab">
+    <a href="<?php echo $path; ?>">TOPへ</a>
+  </div>
 
-  <div class="container pc">
+  <div class="container">
     <div class="footer__banner">
       <a rel="nofollow" href="https://kansai.qzin.jp/oneyubi/?v=official" target="_blank">
         <img src="https://ad.qzin.jp/img/vanilla468-60.gif" width="468" border="0" alt="お姉さんの指先で稼ぐならバニラ求人">
@@ -137,9 +140,6 @@
     </div>
   </div>
 
-  <div class="footer__topBtn tab">
-    <a href="<?php echo $path; ?>">TOPへ</a>
-  </div>
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.js"></script>

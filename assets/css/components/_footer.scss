@@ -3,7 +3,8 @@
   padding: 111px 0 0;
   position: relative;
   @include tab {
-    margin-top: calc(250vw / (768 / 100));
+    margin-top: calc(50vw / (768 / 100));
+    padding-bottom: 80px;
   }
 
   &__logo {
@@ -157,7 +158,6 @@
 
   &__topBtn {
     @include tab {
-      padding-bottom: 200px;
       padding-right: 5%;
       color: #646464;
       font-family: "小塚ゴシック Pro", "Kozuka Gothic Pro", $gothic;
