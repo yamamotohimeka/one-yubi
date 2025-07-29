@@ -157,16 +157,13 @@
 
   &__topBtn {
     @include tab {
-      padding: calc(19vw / (768 / 100)) 0;
+      padding-bottom: 200px;
+      padding-right: 5%;
+      color: #646464;
       font-family: "小塚ゴシック Pro", "Kozuka Gothic Pro", $gothic;
-      position: absolute;
-      bottom: calc(250vw / (768 / 100));
-      right: calc(75vw / (768 / 100));
-
       font-weight: 400;
       font-size: calc(34vw / (768 / 100));
-      color: #646464;
-      z-index: 1;
+      text-align: right;
     }
   }
 }
