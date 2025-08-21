@@ -126,6 +126,10 @@
       <a href="https://www.tekoki-fuzoku-joho.com/" target="_blank" rel="noopener">
         <img src="<?php echo $path; ?>assets/img/banner/maniax.jpg" alt="手コキ風俗マニアックス">
       </a>
+      <a href="https://happyhellowork.com/" target="_blank"><img src="https://happyhellowork.com/bnimg/hhw_l_linkbanner.png" alt="風俗求人・高収入アルバイト・スキマ風俗バイトのハピハロ" border="0" /></a>
+      <a href="https://happyhellowork.com/osaka/" target="_blank"><img src="https://happyhellowork.com/bnimg/hhw_l_linkbanner_gr.png" alt="大阪の風俗求人・高収入アルバイト" border="0" /></a>
+      <a href="https://happyhellowork.com/osaka/search.php?cont=0&s=9" target="_blank"><img src="https://happyhellowork.com/bnimg/hhw_l_linkbanner_br.png" alt="大阪 オナクラ・手コキの風俗求人" border="0" /></a>
+      <a href="https://happyhellowork.com/osaka/search.php?cont=1&s=219" target="_blank"><img src="https://happyhellowork.com/bnimg/hhw_l_linkbanner_re.png" alt="大阪　スキマ風俗バイト・風俗スキマバイト" border="0" /></a>
     </div>
   </div>
 
