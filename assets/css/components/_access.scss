@@ -1,58 +1,121 @@
 .access {
-  &__store {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 289px 0 120px 0;
-    gap: 222px;
-    font-family: "A-OTF リュウミン Pr6N", $mincho;
-    font-weight: normal;
-    font-size: 30px;
-    @include pc {
-      font-size: calc(30vw / (1200 / 100));
-      padding: calc(289vw / (1200 / 100)) 0 calc(120vw / (1200 / 100)) 0;
-      gap: calc(222vw / (1200 / 100));
-    }
+  padding-bottom: $space-2xl;
+
+  .section-title {
     @include tab {
-      padding: calc(65vw / (768 / 100)) 0 calc(10vw / (768 / 100));
-      font-size: calc(28vw / (768 / 100));
-      gap: calc(103vw / (768 / 100));
+      padding-top: $space-lg;
     }
 
-    &-text {
-      text-align: center;
-      display: flex;
-      @include tab {
-        align-items: flex-start;
-        flex-direction: column;
-      }
+    @include sp {
+      padding-top: $space-md;
+    }
+  }
+
+  &__store {
+    display: flex;
+    flex-direction: column;
+    gap: $space-xl;
+    padding: $space-lg 0 $space-2xl;
+    font-family: "Noto Sans JP", $gothic;
+
+    @include tab {
+      gap: $space-lg;
+      padding: $space-md 0 $space-2xl;
+    }
+
+    @include sp {
+      gap: $space-md;
+      padding: $space-sm 0 $space-xl;
     }
 
     &-map {
       display: flex;
       flex-direction: column;
-      gap: 12px;
-      @include pc {
-        gap: calc(12vw / (1200 / 100));
-      }
-      @include tab {
-        align-items: center;
-        margin: 0 auto;
+      gap: $space-sm;
+      width: 100%;
+      padding: $space-md;
+      @include card-base;
+      border: 1px solid $border-light;
+
+      &:hover {
+        transform: none;
       }
 
-      .map-img {
-        width: 1200px;
-        height: 532px;
-        @include pc {
-          width: calc(1200vw / (1200 / 100));
-          height: calc(532vw / (1200 / 100));
+      @include tab {
+        max-width: 100%;
+
+        &:hover {
+          box-shadow: $shadow-sm;
         }
-        @include tab {
-          width: calc(557vw / (768 / 100));
-          height: calc(557vw / (768 / 100));
+      }
+
+      @include sp {
+        padding: $space-sm;
+        gap: $space-xs;
+        border-radius: $radius-sm;
+      }
+    }
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      gap: $space-xs;
+      text-align: left;
+
+      h4 {
+        margin: 0;
+        font-size: clamp(18px, 2vw, 22px);
+        font-family: "Shippori Mincho B1", "游明朝", "Yu Mincho", serif;
+        font-weight: 500;
+        color: $text-primary;
+        letter-spacing: 0.08em;
+        line-height: 1.4;
+
+        &::after {
+          content: "";
+          display: block;
+          width: 32px;
+          height: 2px;
+          background-color: $pink;
+          margin-top: $space-xs;
         }
+
+        @include sp {
+          font-size: 17px;
+        }
+      }
+
+      p {
+        margin: 0;
+        font-size: clamp(13px, 1.3vw, 15px);
+        color: $text-secondary;
+        line-height: 1.65;
+        word-break: break-word;
+
+        @include sp {
+          font-size: 13px;
+          line-height: 1.7;
+        }
+      }
+    }
+
+    .map-img {
+      display: block;
+      width: 100%;
+      height: auto;
+      min-height: 200px;
+      aspect-ratio: 16 / 9;
+      border: 0;
+      border-radius: $radius-sm;
+
+      @include tab {
+        min-height: 180px;
+      }
+
+      @include sp {
+        min-height: 160px;
+        aspect-ratio: 4 / 3;
+        border-radius: 6px;
       }
     }
   }

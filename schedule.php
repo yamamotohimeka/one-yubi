@@ -14,11 +14,8 @@ include $path . 'components/header.php';
         <ul class="schedule__btn__list">
           <?php 
             $date = "<li class='schedule__btn__list-link'>
-          <div class='schedule__btn__list-link_date'>
-            <div class='schedule__btn__list-link_month'></div>
-            <div class='schedule__btn__list-link_day'></div>
-          </div>
-            <div class='schedule__btn__list-link_week'></div>
+            <span class='schedule__btn__list-link_date'></span>
+            <span class='schedule__btn__list-link_week'></span>
         </li>";
             echo str_repeat($date, 7);
           ?>

@@ -1,150 +1,181 @@
 .girl {
-  &__list {
-    padding-left: 50px;
-    @include pc {
-      padding-left: calc(50vw / (1200 / 100));
-    }
+  padding-bottom: $space-2xl;
+
+  .section-title {
     @include tab {
-      padding-left: 0;
+      padding-top: $space-lg;
     }
+
+    @include sp {
+      padding-top: $space-md;
+    }
+  }
+
+  &__list {
     .cast__box__list {
-      gap: 85px 54px;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: $space-md;
+      padding: $space-lg 0 0;
+      justify-items: stretch;
+      align-items: stretch;
 
-      &:first-of-type {
-        &::before {
-          content: "";
-          display: block;
-          top: 0;
-          left: 0;
-          width: 700px;
-          @include pc {
-            width: calc(1200vw / (2000 / 100));
-          }
-          @include tab {
-            width: calc(336vw / (768 / 100));
-          }
-        }
-      }
       @include pc {
-        gap: calc(85vw / (1200 / 100)) calc(54vw / (1200 / 100));
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: $space-md $space-sm;
       }
+
       @include tab {
-        gap: calc(47vw / (768 / 100)) calc(24vw / (768 / 100));
-        padding: 0 calc(36vw / (768 / 100));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: $space-md $space-sm;
+        padding: $space-md 0 0;
       }
+
       @include sp {
-        gap: calc(30vw / (440 / 100)) calc(10vw / (440 / 100));
+        gap: $space-sm 8px;
+        padding-top: $space-sm;
       }
     }
   }
 }
 
-.cast {
-  &__box {
-    &__list {
-      display: flex;
-      justify-content: flex-start;
-      flex-wrap: wrap;
-      flex-direction: row;
-      padding: 0 0 0 68px;
-      gap: 54px;
-      flex-basis: 290px;
-      @include pc {
-        padding: 0 0 calc(0vw / (1200 / 100)) calc(68vw / (1200 / 100));
-        gap: calc(54vw / (1200 / 100));
-        flex-basis: calc(290vw / (1200 / 100));
-      }
-      @include tab {
-        padding: 0 0 0 calc(31vw / (768 / 100));
-        gap: calc(47vw / (768 / 100)) calc(24vw / (768 / 100));
-      }
-      @include sp {
-        gap: calc(30vw / (440 / 100)) calc(10vw / (440 / 100));
-      }
-    }
-  }
-}
-.girlCard {
-  width: 290px;
-  @include pc {
-    width: calc(285vw / (1200 / 100));
-  }
+.girlCard:not(.girlCard--top) {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: none;
+  border-radius: $radius-md;
+  overflow: hidden;
+  @include card-base;
+
   @include tab {
-    width: calc(336vw / (768 / 100));
+    &:hover {
+      transform: none;
+    }
   }
-  &-fee {
-    font-size: 25px;
-    background-color: #da7e93;
+
+  .girlCard-frame {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+  }
+
+  .girlCard-fee {
+    font-size: clamp(12px, 1.2vw, 14px);
+    background-color: $pink;
     color: #fff;
-    padding: 1px 0;
+    padding: 6px 0;
     width: 100%;
     text-align: center;
-    @include pc {
-      font-size: calc(25vw / (1200 / 100));
+    font-weight: 500;
+
+    p {
+      margin: 0;
     }
-    @include tab {
-      font-size: calc(28vw / (768 / 100));
+
+    @include sp {
+      font-size: 11px;
+      padding: 5px 0;
     }
-  }
-  &:last-of-type {
-    display: none;
   }
 
-  &-img {
-    z-index: 1;
-    width: 290px;
-    height: 387px;
-    @include pc {
-      width: calc(290vw / (1200 / 100));
-      height: calc(387vw / (1200 / 100));
-    }
-    @include tab {
-      width: calc(336vw / (768 / 100));
-      height: calc(448vw / (768 / 100));
-    }
+  .girlCard-img {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+    flex-shrink: 0;
+
     img {
       width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
-  &-name {
+
+  .girlCard-badge {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 2;
+    padding: 4px 10px;
+    background-color: rgba($pink, 0.92);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 500;
+    border-radius: $radius-pill;
+    line-height: 1.3;
+
+    @include sp {
+      top: 6px;
+      left: 6px;
+      padding: 3px 8px;
+      font-size: 10px;
+    }
+  }
+
+  .girlCard-name {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 4px;
-    padding-top: 8px;
-    font-size: 27px;
-    font-family: "aqua*", $gothic;
-    color: #646464;
-    @include pc {
-      font-size: calc(27vw / (1200 / 100));
+    flex: 1;
+    padding: $space-sm $space-xs;
+    font-size: clamp(14px, 1.4vw, 16px);
+    font-family: "Noto Sans JP", $gothic;
+    color: $text-primary;
+    text-align: center;
+
+    h3 {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: center;
+      gap: 4px;
+      margin: 0;
+      font-weight: 700;
+      line-height: 1.35;
     }
-    @include tab {
-      font-size: calc(32vw / (768 / 100));
+
+    @include sp {
+      gap: 2px;
+      padding: $space-xs 6px $space-sm;
+      font-size: 13px;
     }
   }
-  &-time {
-    font-size: 24px;
-    font-family: "A-OTF リュウミン Pro", "A-OTF Rumin Pro", $mincho;
-    background-color: $blue;
-    color: #fff;
-    width: 100%;
-    text-align: center;
-    padding: 3px 0;
-    letter-spacing: -0.01em;
-    @include pc {
-      font-size: calc(24vw / (1200 / 100));
-    }
-    @include tab {
-      font-size: calc(28vw / (768 / 100));
+
+  .girlCard-age {
+    font-weight: 500;
+  }
+
+  .girlCard-stats {
+    font-size: clamp(11px, 1vw, 12px);
+    color: $text-muted;
+    margin: 0;
+    line-height: 1.45;
+    word-break: break-word;
+
+    @include sp {
+      font-size: 10px;
     }
   }
 }
+
+.schedule .cast__box__list > .girlCard--top:last-of-type:not(.block) {
+  display: none;
+}
+
 .showMoreButton {
-  margin-top: calc(-20vw / (768 / 100));
-  font-size: calc(22vw / (768 / 100));
-  border-bottom: 1px solid #0000009a;
-  @include pc {
-    margin-top: calc(-20vw / (1200 / 100));
-    font-size: calc(22vw / (1200 / 100));
+  margin-top: $space-sm;
+  font-size: 15px;
+  color: $text-secondary;
+  border-bottom: 1px solid $border-light;
+  transition: color 0.2s;
+
+  &:hover {
+    color: $pink;
+    opacity: 1;
   }
 }

@@ -1,148 +1,370 @@
 .concept {
-  &__bg {
-    background: url(../img/concept-bg.png) no-repeat center center;
-    background-size: cover;
-    width: 100%;
-    height: 1203px;
-    @include pc {
-      height: calc(1203vw / (1200 / 100));
-    }
-    @include tab {
-      margin-top: calc(115vw / (768 / 100));
-      position: relative;
-      height: calc(1541vw / (768 / 100));
-      background-size: auto calc(840vw / (768 / 100));
-      background-position: calc(-806vw / (768 / 100)) 0;
-      overflow: hidden;
+  background-color: #fcf7f7;
 
-      .section-title {
-        padding-top: 0;
+  &__hero {
+    position: relative;
+    padding: 0;
+    background: none;
+    overflow: hidden;
+
+    @include tab {
+      max-height: calc(650vw / (768 / 100));
+      min-height: calc(650vw / (768 / 100));
+    }
+
+    &-media {
+      max-height: 600px;
+      overflow: hidden;
+      line-height: 0;
+
+      @include tab {
         position: absolute;
-        top: calc(-89vw / (768 / 100));
-        left: 50%;
-        transform: translateY(-50%) translateX(-50%);
+        inset: 0;
+        max-height: calc(650vw / (768 / 100));
+        min-height: calc(650vw / (768 / 100));
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        min-height: 220px;
+        max-height: 600px;
+        object-fit: cover;
+        object-position: bottom center;
+
+        @include tab {
+          width: 100%;
+          height: calc(650vw / (768 / 100));
+          min-height: 150%;
+          max-height: calc(650vw / (768 / 100));
+          object-fit: cover;
+          object-position: 70% calc(-290vw / (768 / 100));
+        }
+      }
+    }
+
+    &-content {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      pointer-events: none;
+
+      @include tab {
+        align-items: center;
+        padding: calc(50vw / (768 / 100)) 0 calc(50vw / (768 / 100))
+          calc(40vw / (768 / 100));
+      }
+    }
+
+    &-inner {
+      max-width: 520px;
+      pointer-events: auto;
+
+      @include tab {
+        max-width: 100%;
+      }
+    }
+
+    &-tag {
+      display: inline-block;
+      margin-bottom: $space-md;
+      text-align: center;
+
+      &::before {
+        content: "";
+        display: block;
+        width: min(300px, 90vw);
+        height: 30px;
+        margin: 0 auto $space-xs;
+        background: url(../img/title-deco.png) no-repeat center / contain;
+        transform: scaleY(-1);
+      }
+    }
+
+    &-label {
+      margin: 0;
+      font-family: "Shippori Mincho B1", "游明朝", "Yu Mincho", serif;
+      font-size: clamp(22px, 2.8vw, 32px);
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      color: #a96a6a;
+      text-align: center;
+      text-shadow:
+        0 0 14px rgba(#fff, 0.98),
+        0 2px 8px rgba(#fff, 0.85);
+    }
+
+    &-deco {
+      width: min(300px, 90vw);
+      height: 30px;
+      margin: $space-xs auto 0;
+      background: url(../img/title-deco.png) no-repeat center / contain;
+    }
+
+    &-title {
+      margin: 0;
+      font-family: "Shippori Mincho B1", "游明朝", "Yu Mincho", serif;
+      font-size: clamp(32px, 4.5vw, 48px);
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      line-height: 1.35;
+      color: $text-primary;
+      text-align: left;
+
+      &::before,
+      &::after {
+        display: none;
+      }
+
+      span {
+        color: $pink;
+      }
+
+      @include tab {
+        font-size: clamp(28px, 8vw, 36px);
+        text-shadow:
+          0 0 14px rgba(#fff, 0.98),
+          0 2px 8px rgba(#fff, 0.85);
+      }
+    }
+
+    &-subtitle {
+      margin: $space-sm 0 0;
+      font-family: "Shippori Mincho B1", "游明朝", "Yu Mincho", serif;
+      font-size: clamp(14px, 1.6vw, 18px);
+      letter-spacing: 0.12em;
+      color: #a96a6a;
+      text-align: left;
+
+      @include tab {
+        text-shadow:
+          0 0 12px rgba(#fff, 0.98),
+          0 1px 6px rgba(#fff, 0.85);
+      }
+    }
+
+    &-lead {
+      margin: $space-md 0 0;
+      font-size: clamp(14px, 1.5vw, 16px);
+      line-height: 1.9;
+      color: $text-secondary;
+      text-align: left;
+
+      @include tab {
+        text-shadow:
+          0 0 10px rgba(#fff, 0.98),
+          0 1px 5px rgba(#fff, 0.8);
       }
     }
   }
-  .section-title {
-    padding-top: 69px;
-    @include pc {
-      padding-top: calc(69vw / (1200 / 100));
-    }
+
+  &__about {
+    padding: $space-xl 0 $space-2xl;
+    background: #fff;
+
     @include tab {
-      padding-top: 0;
+      padding: $space-lg 0 $space-xl;
+    }
+
+    .section-title {
+      padding-top: $space-md;
+    }
+
+    &-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(320px, 520px);
+      gap: $space-2xl;
+      align-items: center;
+      margin-top: $space-md;
+
+      @include pc {
+        grid-template-columns: 1fr;
+        gap: $space-xl;
+      }
+    }
+
+    &-text {
+      padding-right: $space-sm;
+
+      @include pc {
+        padding-right: 0;
+      }
+    }
+
+    &-heading {
+      margin: 0 0 $space-lg;
+      font-family: "Shippori Mincho B1", "游明朝", "Yu Mincho", serif;
+      font-size: clamp(22px, 2.5vw, 28px);
+      font-weight: 500;
+      line-height: 1.65;
+      letter-spacing: 0.05em;
+      color: $text-primary;
+
+      span {
+        color: $pink;
+      }
+    }
+
+    &-body {
+      display: flex;
+      flex-direction: column;
+      gap: $space-xs;
+
+      p {
+        margin: 0;
+        font-family: "Shippori Mincho B1", "游明朝", "Yu Mincho", serif;
+        font-size: clamp(14px, 1.45vw, 15px);
+        line-height: 1.75;
+        letter-spacing: 0.02em;
+        color: $text-primary;
+
+        &.concept__about-highlight {
+          margin: $space-xs 0;
+          font-size: clamp(17px, 1.9vw, 20px);
+          font-weight: 500;
+          line-height: 1.7;
+          letter-spacing: 0.04em;
+          color: $pink;
+        }
+      }
     }
   }
 
-  &__flex {
-    display: flex;
-    flex-direction: column;
-    padding: 125px 15px 0;
-    gap: 54px;
+  &__visual {
+    position: relative;
+    align-self: center;
+    width: 100%;
+    max-width: 520px;
+    margin-left: auto;
+    padding: 10px 10px 0 0;
+    overflow: visible;
+    isolation: isolate;
+
     @include pc {
-      padding: calc(125vw / (1200 / 100)) calc(15vw / (1200 / 100))
-        calc(0vw / (1200 / 100));
-      gap: calc(54vw / (1200 / 100));
-    }
-    @include tab {
-      padding: calc(709vw / (768 / 100)) 0;
-      align-items: center;
-      gap: calc(72vw / (768 / 100));
-      width: calc(671vw / (768 / 100));
+      max-width: 480px;
       margin: 0 auto;
     }
 
-    &__img {
-      padding-left: 26px;
-      @include pc {
-        padding-left: calc(26vw / (1200 / 100));
-      }
-      @include tab {
-        padding-left: 0;
-      }
-      img {
-        width: 469px;
-        @include pc {
-          width: calc(469vw / (1200 / 100));
-        }
-        @include tab {
-          width: calc(516vw / (768 / 100));
-        }
-      }
+    @include tab {
+      padding: 0;
+      margin: 0 auto;
     }
 
-    &__text {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      @include pc {
-        gap: calc(12vw / (1200 / 100));
-      }
+    &-bg {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      width: calc(100% - 28px);
+      height: calc(100% - 28px);
+      border-radius: 32px;
+      background: #f2e1e6;
+      z-index: -1;
+    }
+
+    img {
+      position: relative;
+      z-index: 1;
+      display: block;
+      width: calc(100% - 28px);
+      height: auto;
+      margin: 0 0 28px 28px;
+      border-radius: 28px;
+      box-shadow: 0 20px 48px rgba(45, 22, 32, 0.14);
+
       @include tab {
-        gap: calc(16vw / (768 / 100));
-      }
-
-      p {
-        font-size: 31px;
-        color: $blue;
-        font-weight: 500;
-        font-family: "FOT-筑紫明朝 Pro", $mincho;
-        line-height: 1.35;
-        @include pc {
-          font-size: calc(31vw / (1200 / 100));
-        }
-        @include tab {
-          font-size: calc(28vw / (768 / 100));
-        }
-
-        &:nth-child(2) {
-          font-size: 41px;
-          @include pc {
-            font-size: calc(41vw / (1200 / 100));
-          }
-          @include tab {
-            font-size: calc(37vw / (768 / 100));
-          }
-        }
+        width: calc(100% - 16px);
+        margin: 0 0 20px 16px;
+        border-radius: 20px;
       }
     }
   }
 
   &__caution {
-    padding: 67px 0;
-    @include pc {
-      padding: calc(67vw / (1200 / 100)) 0;
-    }
+    padding: $space-2xl 0 $space-3xl;
+    background: #fff;
+
     @include tab {
-      padding: calc(62vw / (768 / 100)) 0;
+      padding: $space-xl 0 $space-2xl;
     }
-    &__text {
-      padding: 55px 0 0 232px;
-      @include pc {
-        padding: calc(55vw / (1200 / 100)) 0 calc(0vw / (1200 / 100))
-          calc(232vw / (1200 / 100));
-      }
+
+    &-box {
+      max-width: 960px;
+      margin: $space-lg auto 0;
+      padding: $space-xl $space-lg;
+      background: #faf8f8;
+      border: 1px solid rgba($pink, 0.1);
+      border-radius: 24px;
+      box-shadow: 0 8px 28px rgba(80, 40, 55, 0.05);
+
       @include tab {
-        padding: calc(57vw / (768 / 100)) 0 0;
-        width: calc(694vw / (768 / 100));
-        margin: 0 auto;
+        padding: $space-lg $space-md;
       }
 
+      @include sp {
+        padding: $space-md $space-sm;
+        border-radius: 16px;
+      }
+    }
+
+    &-intro {
+      margin: 0 0 $space-lg;
+      font-size: clamp(13px, 1.3vw, 15px);
+      line-height: 1.9;
+      color: $text-secondary;
+    }
+
+    &-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: $space-sm $space-lg;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      @include tab {
+        grid-template-columns: 1fr;
+        gap: $space-sm;
+      }
+
+      li {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: clamp(13px, 1.25vw, 14px);
+        line-height: 1.7;
+        color: $text-primary;
+
+        i {
+          flex-shrink: 0;
+          margin-top: 3px;
+          font-size: 15px;
+          color: $pink;
+        }
+
+        span {
+          flex: 1;
+        }
+      }
+    }
+
+    &-notes {
+      margin-top: $space-lg;
+      padding-top: $space-md;
+      border-top: 1px solid rgba($pink, 0.12);
+
       p {
-        color: #091130;
-        font-size: 18px;
-        font-weight: 500;
-        font-family: "小塚ゴシック Pro", "Kozuka Gothic Pro", $gothic;
-        line-height: 1.88;
-        font-feature-settings: "palt";
-        @include pc {
-          font-size: calc(18vw / (1200 / 100));
+        margin: 0;
+
+        & + p {
+          margin-top: $space-sm;
         }
-        @include tab {
-          font-size: calc(28vw / (768 / 100));
-          font-weight: 300;
-          line-height: 1.65;
-        }
+
+        font-size: clamp(12px, 1.2vw, 14px);
+        line-height: 1.85;
+        color: $text-muted;
       }
     }
   }

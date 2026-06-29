@@ -1,65 +1,47 @@
 <footer class="footer">
-  <div class="container pc">
-    <div class="footer__logo">
-      <img src="<?php echo $path; ?>assets/img/logo.png" alt="お姉さんの指先">
-    </div>
-  </div>
+  <div class="footer__main">
+    <div class="container footer__main-inner">
+      <div class="footer__brand">
+        <img src="<?php echo $path; ?>assets/img/logo.png" alt="お姉さんの指先">
+        <p class="footer__brand-lead">年上・お姉さん好き専門オナクラ</p>
+        <p class="footer__brand-text">あなただけの特別な時間を。<br>大阪エリアに複数店舗を展開しています。</p>
+      </div>
 
-  <div class="footer__bg">
-    <div class="container pc">
-      <div class="footer__flex">
-        <nav class="footer__nav pc">
-          <ul class="footer__nav__list">
-            <li class="footer__nav__list-link <?php if ($templete === 'top') echo 'active'; ?>">
-              <a href="<?php echo $path; ?>">
-                <span>TOP</span>
-              </a>
-            </li>
-            <li class="footer__nav__list-link <?php if ($templete === 'concept') echo 'active'; ?>">
-              <a href="<?php echo $path; ?>concept.php">
-                <span>CONCEPT</span>
-              </a>
-            </li>
-            <li class="footer__nav__list-link <?php if ($templete === 'cast') echo 'active'; ?>">
-              <a href="<?php echo $path; ?>girl.php">
-                <span>CAST</span>
-              </a>
-            </li>
-            <li class="footer__nav__list-link <?php if ($templete === 'diary') echo 'active'; ?>">
-              <a href="<?php echo $path; ?>diary.php">
-                <span>PHOTOBBS</span>
-              </a>
-            </li>
-            <li class="footer__nav__list-link <?php if ($templete === 'schedule') echo 'active'; ?>">
-              <a href="<?php echo $path; ?>schedule.php">
-                <span>SCHEDULE</span>
-              </a>
-            </li>
-            <li class="footer__nav__list-link <?php if ($templete === 'system') echo 'active'; ?>">
-              <a href="<?php echo $path; ?>system.php">
-                <span>SYSTEM</span>
-              </a>
-            </li>
-            <li class="footer__nav__list-link <?php if ($templete === 'access') echo 'active'; ?>">
-              <a href="<?php echo $path; ?>access.php">
-                <span>ACCESS</span>
-              </a>
-            </li>
-            <li class="footer__nav__list-link <?php if ($templete === 'recruit') echo 'active'; ?>">
-              <a href="https://one-yubi.net/" target="_blank">
-                <span>RECRUIT</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
+      <nav class="footer__sitemap pc">
+        <ul>
+          <li><a href="<?php echo $path; ?>">トップ</a></li>
+          <li><a href="<?php echo $path; ?>concept.php">コンセプト</a></li>
+          <li><a href="<?php echo $path; ?>girl.php">キャスト一覧</a></li>
+          <li><a href="<?php echo $path; ?>schedule.php">出勤情報</a></li>
+        </ul>
+        <ul>
+          <li><a href="<?php echo $path; ?>diary.php">写メ日記</a></li>
+          <li><a href="<?php echo $path; ?>system.php">料金システム</a></li>
+          <li><a href="<?php echo $path; ?>access.php">アクセス</a></li>
+          <li><a href="https://one-yubi.net/" target="_blank" rel="noopener">求人</a></li>
+        </ul>
+      </nav>
 
-        <div class="footer__tel">
-          <img src="<?php echo $path; ?>assets/img/tel-icon-footer.png" alt="お姉さんの指先">
-          <a href="tel:0120-868-846">0120-868-846</a>
+      <div class="footer__contact pc">
+        <a href="tel:0120-868-846" class="footer__contact-tel">
+          <i class="fa-solid fa-phone" aria-hidden="true"></i>
+          <span>0120-868-846</span>
+        </a>
+        <p class="footer__contact-hours">受付時間 10:00〜翌5:00</p>
+        <div class="footer__contact-btns">
+          <button type="button" class="footer__auth-btn footer__auth-btn--login js-login-open">ログイン</button>
+          <button type="button" class="footer__auth-btn footer__auth-btn--signup js-login-open">会員登録</button>
         </div>
       </div>
     </div>
   </div>
+
+  <div class="footer__legal">
+    <div class="container">
+      <p class="footer__copyright">&copy; お姉さんの指先 All Rights Reserved.</p>
+    </div>
+  </div>
+
   <div class="footer__topBtn tab">
     <a href="<?php echo $path; ?>">TOPへ</a>
   </div>
@@ -136,10 +118,10 @@
   <div class="container tab">
     <div class="footer__tab__nav">
       <a href="tel:0120-868-846" class="footer__tab__nav__btn">
-        <img src="<?php echo $path; ?>assets/img/telNav-btn.png" alt="電話">
+        <i class="fa-solid fa-phone" aria-hidden="true"></i> 電話する
       </a>
       <div class="footer__tabButton__bg footer__tab__nav__btn footer__tabButton">
-        <img src="<?php echo $path; ?>assets/img/menuNav-btn.png" alt="電話">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i> メニュー
       </div>
     </div>
   </div>

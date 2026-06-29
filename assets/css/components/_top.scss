@@ -1,251 +1,343 @@
 .top {
-  &__swiper {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    padding-bottom: 73px;
-    @include pc {
-      padding-bottom: calc(73vw / (1200 / 100));
-    }
+  &__section {
+    padding: $space-xl 0;
+
     @include tab {
-      padding-bottom: calc(57vw / (768 / 100));
+      padding: $space-lg 0;
     }
+
+    @include sp {
+      padding: $space-md 0;
+    }
+
+    &--alt {
+      box-shadow: 0 0px 15px #f0a0a04d;
+    }
+  }
+
+  &__topics {
+    padding-top: $space-sm;
+
+    .container {
+      overflow: hidden;
+    }
+  }
+
+  &__swiper {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 0 $space-md;
+
     .swiper {
-      width: 977px;
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+      overflow: hidden;
       height: auto;
-      position: relative;
-      z-index: 0;
-      @include pc {
-        width: calc(977vw / (1200 / 100));
-      }
-      @include tab {
-        width: 100%;
-        padding: calc(8vw / (768 / 100));
-      }
 
-      &-wrapper {
-        display: flex;
-        width: 100%;
-      }
       &-slide {
-        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        opacity: 0.55;
+        transition: opacity 0.35s ease;
 
-        img {
-          width: 977px;
-          height: auto;
-          display: block;
-          @include pc {
-            width: calc(977vw / (1200 / 100));
-          }
-          @include tab {
-            width: 100%;
-          }
+        &-active {
+          opacity: 1;
+        }
+
+        &-prev {
+          justify-content: flex-end;
+        }
+
+        &-next {
+          justify-content: flex-start;
         }
       }
+
       &-pagination {
-        display: flex;
-        justify-content: center;
-        padding: 10px 0;
-        gap: 25px;
-        position: absolute;
-        z-index: -1;
-        @include pc {
-          padding: calc(10vw / (1200 / 100)) 0;
-          gap: calc(25vw / (1200 / 100));
-        }
-        @include tab {
-          gap: calc(18vw / (768 / 100));
-        }
+        position: relative;
+        margin-top: $space-sm;
+        z-index: 2;
 
         &-bullet {
-          width: 25px;
-          height: 25px;
-          background-color: #6b6b6b;
-          border-radius: 50%;
-          margin: 0 5px;
+          width: 8px;
+          height: 8px;
+          background-color: #ddd;
           opacity: 1;
-          @include pc {
-            width: calc(25vw / (1200 / 100));
-            height: calc(25vw / (1200 / 100));
-          }
-          @include tab {
-            width: calc(20vw / (768 / 100));
-            height: calc(20vw / (768 / 100));
-          }
 
           &-active {
-            background-color: #000;
-          }
-
-          &:hover {
-            opacity: 0.7;
+            background-color: $pink;
+            transform: scale(1.2);
           }
         }
       }
     }
   }
 
-  &__diary {
-    padding-top: 75px;
+  &__swiper-card {
+    width: 500px;
+    aspect-ratio: 1 / 1;
+    border-radius: $radius-md;
+    overflow: hidden;
+    box-shadow: $shadow-sm;
+    transform: scale(0.84);
+    transform-origin: center center;
+    transition:
+      transform 0.35s ease,
+      box-shadow 0.35s ease;
+
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .swiper-slide-active & {
+      transform: scale(1);
+      box-shadow: $shadow-md;
+    }
+
     @include pc {
-      padding-top: calc(75vw / (1200 / 100));
+      width: min(500px, 42vw);
     }
+
     @include tab {
-      padding-top: calc(116vw / (768 / 100));
-    }
-    &__list {
-      padding-top: 57px;
-      @include pc {
-        padding-top: calc(57vw / (1200 / 100));
-      }
-      @include tab {
-        padding-top: calc(68vw / (768 / 100));
-      }
-      .cast__box__list {
-        padding: 0 51px;
-        gap: 14px;
-        @include pc {
-          gap: calc(14vw / (1200 / 100));
-        }
-        @include tab {
-          padding: 0 0 0 calc(21vw / (768 / 100));
-          flex-direction: row;
-          flex-wrap: nowrap;
-          justify-content: flex-start;
-          overflow-x: auto;
-          gap: 0 calc(28vw / (768 / 100));
-        }
-
-        .diary {
-          border: 1px solid $pink;
-          width: 24%;
-          padding: 15px 17px;
-          @include pc {
-            width: 23.5%;
-            padding: calc(15vw / (1200 / 100)) calc(17vw / (1200 / 100));
-          }
-          @include tab {
-            flex-wrap: wrap;
-            align-items: flex-start;
-            margin-bottom: calc(10vw / (768 / 100));
-            padding: calc(15vw / (768 / 100)) calc(17vw / (768 / 100));
-            width: calc(641vw / (768 / 100));
-            height: calc(348vw / (768 / 100));
-            gap: calc(41vw / (768 / 100)) calc(38vw / (768 / 100));
-
-            &-img {
-              width: calc(229vw / (768 / 100));
-              img {
-                width: calc(229vw / (768 / 100));
-              }
-            }
-          }
-          &-name {
-            font-size: 24px;
-            @include pc {
-              font-size: calc(24vw / (1200 / 100));
-            }
-            @include tab {
-              font-size: calc(30vw / (768 / 100));
-            }
-          }
-          &-text {
-            font-size: 16px;
-            @include pc {
-              font-size: calc(16vw / (1200 / 100));
-            }
-            @include tab {
-              font-size: calc(28vw / (768 / 100));
-              padding: 0;
-              word-break: break-all;
-              min-width: 22em;
-
-              p {
-                word-break: break-all;
-                max-width: calc(338vw / (768 / 100));
-              }
-            }
-          }
-        }
-      }
+      width: 62vw;
+      max-width: 290px;
     }
 
-    &-link {
-      margin: 36px 79px auto auto;
-      padding: 17px 0;
-      width: 217px;
+    @include sp {
+      width: 78vw;
+      max-width: none;
+    }
+  }
+
+  &__swiper-prev,
+  &__swiper-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: $pink;
+    box-shadow: $shadow-sm;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition:
+      background-color 0.2s,
+      color 0.2s;
+
+    &:hover {
       background-color: $pink;
       color: #fff;
-      border-radius: 50px;
-      text-align: center;
-      font-size: 20px;
-      font-family: "小塚ゴシック Pro", "Kozuka Gothic Pro", $gothic;
+      opacity: 1;
+    }
+  }
+
+  &__swiper-prev {
+    left: 12px;
+  }
+
+  &__swiper-next {
+    right: 12px;
+  }
+
+  @include sp {
+    &__swiper-prev,
+    &__swiper-next {
+      width: 30px;
+      height: 30px;
+      font-size: 12px;
+    }
+
+    &__swiper-prev {
+      left: 4px;
+    }
+
+    &__swiper-next {
+      right: 4px;
+    }
+  }
+
+  &__diary {
+    .cast__box__list {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      align-items: stretch;
+      gap: $space-sm;
+      padding: 0;
+
       @include pc {
-        margin: calc(36vw / (1200 / 100)) calc(79vw / (1200 / 100)) auto auto;
-        padding: calc(17vw / (1200 / 100)) 0;
-        width: calc(217vw / (1200 / 100));
-        font-size: calc(20vw / (1200 / 100));
+        grid-template-columns: repeat(3, 1fr);
       }
+
       @include tab {
-        margin: calc(34vw / (768 / 100)) calc(41vw / (768 / 100)) auto auto;
-        padding: calc(19vw / (768 / 100)) 0;
-        width: calc(272vw / (768 / 100));
-        font-size: calc(28vw / (768 / 100));
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        overflow-x: auto;
+        gap: $space-sm;
+        padding: 0 0 $space-sm;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+
+        .diary {
+          flex: 0 0 72%;
+          max-width: 72%;
+          scroll-snap-align: start;
+        }
       }
     }
   }
 
   &__schedule {
-    padding-top: 125px;
-    @include pc {
-      padding-top: calc(125vw / (1200 / 100));
-    }
-    @include tab {
-      padding-top: calc(104vw / (768 / 100));
-      padding-bottom: calc(104vw / (768 / 100));
-    }
-    &-link {
-      margin: 36px 139px auto auto;
-      padding: 17px 0;
-      width: 217px;
-      background-color: $pink;
-      color: #fff;
-      border-radius: 50px;
-      text-align: center;
-      font-size: 20px;
-      @include pc {
-        margin: calc(36vw / (1200 / 100)) calc(139vw / (1200 / 100)) auto auto;
-        padding: calc(17vw / (1200 / 100)) 0;
-        width: calc(217vw / (1200 / 100));
-        font-size: calc(20vw / (1200 / 100));
-      }
-      @include tab {
-        margin: calc(34vw / (768 / 100)) calc(41vw / (768 / 100)) auto auto;
-        padding: calc(19vw / (768 / 100)) 0;
-        width: calc(272vw / (768 / 100));
-        font-size: calc(28vw / (768 / 100));
-      }
-    }
+    @include girl-card-top-card;
+
     .cast__box__list {
-      padding: 0 0 0 111px;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: $space-md;
+      padding: $space-lg 0 0;
+      justify-items: stretch;
+      align-items: stretch;
+
       @include pc {
-        padding: 0 0 calc(0vw / (1200 / 100)) calc(60vw / (1200 / 100));
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: $space-md $space-sm;
       }
 
-      &:first-of-type {
-        &::before {
-          content: "";
-          display: block;
-          top: 0;
-          left: 0;
-          width: 700px;
-          @include pc {
-            width: calc(1200vw / (2000 / 100));
-          }
-          @include tab {
-            width: calc(600vw / (768 / 100));
-          }
+      @include tab {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: $space-md $space-sm;
+        padding: 0;
+      }
+
+      @include sp {
+        gap: $space-sm 8px;
+      }
+    }
+
+    .girlCard--top {
+      .girlCard-stats {
+        white-space: nowrap;
+
+        @include sp {
+          font-size: 10px;
+          letter-spacing: -0.02em;
         }
+      }
+    }
+  }
+
+  .diary {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: none;
+    padding: $space-sm;
+    background: #fff;
+    box-shadow: $shadow-sm;
+    border-radius: $radius-md;
+
+    &:hover {
+      box-shadow: $shadow-md;
+      transform: translateY(-2px);
+    }
+
+    &__link {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      height: 100%;
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    &-img {
+      position: relative;
+      flex-shrink: 0;
+      border-radius: $radius-sm;
+      overflow: hidden;
+
+      img {
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
+      }
+    }
+
+    &-date {
+      flex-shrink: 0;
+      margin-top: $space-xs;
+      font-size: 11px;
+      line-height: 1.4;
+      min-height: calc(11px * 1.4);
+      color: $text-muted;
+    }
+
+    &-name {
+      flex-shrink: 0;
+      margin-top: $space-xs;
+      font-size: 13px;
+      line-height: 1.4;
+      min-height: calc(13px * 1.4);
+      font-weight: 700;
+      color: $text-primary;
+    }
+
+    &-age {
+      font-weight: 500;
+      margin-left: 2px;
+    }
+
+    &-text {
+      flex: 1 1 auto;
+      margin-top: $space-xs;
+      font-size: 12px;
+      line-height: 1.5;
+      min-height: calc(12px * 1.5 * 3);
+      color: $text-secondary;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    &-meta {
+      display: flex;
+      flex-shrink: 0;
+      margin-top: auto;
+      padding-top: $space-xs;
+      color: $text-muted;
+      font-size: 12px;
+    }
+
+    &-likes {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      color: $pink;
+
+      i {
+        font-size: 12px;
       }
     }
   }

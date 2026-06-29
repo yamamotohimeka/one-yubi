@@ -6,123 +6,169 @@ include $path . 'components/header.php';
 ?>
 <main class="system">
   <div class="container">
-    <div class="section-title">
-      <h2>システム料金</h2>
-    </div>
     <section class="system__table">
-
-      <table>
-        <tbody>
-          <tr>
-            <th>入会金</th>
-            <td>1,000円</td>
-          </tr>
-          <tr>
-            <th>指名料</th>
-            <td>1,000円〜5,000円</td>
-          </tr>
-          <tr>
-            <th>本指名料</th>
-            <td>2,000円</td>
-          </tr>
-
-        </tbody>
-      </table>
-    </section>
-
-    <section class="system__menu">
-      <div class="system__menu__box">
-        <h3>二人でお留守番〜まさかのパジャマだった件〜</h3>
-        <p>友達の家に遊びに行ったが友達はまだ帰ってなくて、<br>
-          憧れのお姉さんの部屋で待つ事になったが<br class="tab">まさかのパジャマ姿...<br>
-          近くにいるだけで、<br class="tab">お姉さんの髪のいい香りがするだけで、<br>自然と膨らみ始める股間。<br>
-          「コレはまずい！見られたら、絶対にバレちゃう！」<br>必死で隠そうとするあなたとは裏腹に、<br>動きはますます不自然に…<br>
-          「うん？さっきからどうしたの？<br class="tab">なんか落ち着かないね。…って、ちょっと、<br class="tab">どういうこと？
-          もしかして勃っちゃってるの？<br class="tab">マジで？」<br>
-          ああ、もうダメだ!<br>
-          完全にバレたあなたは、<br class="tab">開き直りオナニーしちゃうのでした。</p>
-        <div class="system__menu__box__price">
-          <dl>
-            <div>
-              <dt>60分</dt>
-              <dd>14,000円</dd>
-            </div>
-            <div>
-              <dt>90分</dt>
-              <dd>16,000円</dd>
-            </div>
-          </dl>
-        </div>
+      <div class="section-title">
+        <h2>基本料金</h2>
       </div>
-      <div class="system__menu__box">
-        <h3>部下が谷間を見せつけてきた件</h3>
-        <p>今日も残業、でも今日は部下も一緒に残業だ。<br>
-          会社には2人だけ隣の部下が<br class="tab">何やら暑いとブラウスのボタンを外し出す。<br>
-          ピンクのブラがチラチラと見え隠れ<br class="tab">「これって完全に誘ってる？」<br>
-          そんなことを考えていると体が勝手に反応しちゃって...<br>
-          その様子に気づいた部下が<br class="tab">「先輩なんか勃ってません？」<br>
-          必死に隠すが完全にバレてしまっている<br>
-          開き直りオナニーしちゃうのでした。</p>
-        <div class="system__menu__box__price">
-          <dl>
-            <div>
-              <dt>60分</dt>
-              <dd>16,000円</dd>
-            </div>
-            <div>
-              <dt>90分</dt>
-              <dd>18,000円</dd>
-            </div>
-          </dl>
-        </div>
-      </div>
-      <div class="system__menu__box">
-        <h3>上司のパンチラ見えてしまった件</h3>
-        <p>初めての上司との残業、<br>
-          会社には2人だけペンを落としてしまった僕は<br class="tab">拾おうとしゃがんだら憧れの上司のパンティが丸見え！<br>
-          ストッキングごしのパンティについ勃起してしまう。<br>
-          気づかれていないと確信し、<br class="tab">触っていると上司が近づいてきて<br>
-          「さっきから何してるの？<br class="tab">もしかして私のパンティ見て勃っちゃた？<br>
-          可愛い。ねぇ見せて」<br>
-          と半ば強引にパンツを脱がされ<br class="tab">辱められながら手でしごかれる。</p>
-        <div class="system__menu__box__price">
-          <dl>
-            <div>
-              <dt>60分</dt>
-              <dd>16,000円</dd>
-            </div>
-            <div>
-              <dt>90分</dt>
-              <dd>18,000円</dd>
-            </div>
-          </dl>
-        </div>
-      </div>
-      <div class="system__menu__box">
-        <h3>オリジナルでシナリオを作れる件</h3>
-        <p>あなただけの特別オリジナルメニューです。<br>
-          お好みのシチュエーション、女性の態度<br>
-          （もちろん、本人の可能なものに限りますが！）、反応、<br>
-          どうしてくれるのか、などなど細かく設定、<br>
-          細かく設定、カスタマイズしていただきます。</p>
-        <p>事前に当店スタッフが<br class="tab">ヒアリングシートを作成しますので、<br>
-          初回メニュー作成時のみ、<br class="tab">お時間を頂戴することになります。<br>
-          また、女性によって対応できかねる内容もございます。</p>
-        <div class="system__menu__box__price">
-          <dl>
-            <div>
-              <dt>60分</dt>
-              <dd>16,000円</dd>
-            </div>
-            <div>
-              <dt>90分</dt>
-              <dd>18,000円</dd>
-            </div>
-          </dl>
-        </div>
+
+      <div class="system__table-cards">
+        <article class="system__fee-card">
+          <p class="system__fee-card-label">入会金</p>
+          <p class="system__fee-card-amount">1,000円</p>
+        </article>
+
+        <article class="system__fee-card">
+          <p class="system__fee-card-label">指名料</p>
+          <p class="system__fee-card-amount">1,000円〜5,000円</p>
+        </article>
+
+        <article class="system__fee-card">
+          <p class="system__fee-card-label">本指名料</p>
+          <p class="system__fee-card-amount">2,000円</p>
+        </article>
       </div>
     </section>
 
+    <section class="system-scenario">
+      <div class="section-title">
+        <h2>シナリオコース</h2>
+      </div>
+
+      <div class="system-scenario__list">
+        <article class="system-scenario__card">
+          <div class="system-scenario__image">
+            <img src="<?php echo $path; ?>assets/img/system-01.png" alt="二人でお留守番〜まさかのパジャマだった件〜">
+          </div>
+          <div class="system-scenario__body">
+            <p class="system-scenario__label">SCENARIO 01</p>
+            <div class="system-scenario__title">
+              <img src="<?php echo $path; ?>assets/img/scenario-1.png" alt="二人でお留守番〜まさかのパジャマだった件〜">
+            </div>
+            <div class="system-scenario__prose">
+              <p>友達の家に遊びに行ったが<br class="sp">友達はまだ帰ってなくて、<br>
+                憧れのお姉さんの部屋で待つ事になったが<br>まさかのパジャマ姿...</p>
+              <p>近くにいるだけで、<br class="sp">お姉さんの髪のいい香りがするだけで、<br>自然と膨らみ始める股間。<br>
+                「コレはまずい！見られたら、絶対にバレちゃう！」<br>
+                必死で隠そうとするあなたとは裏腹に、<br class="sp">動きはますます不自然に…<br>
+                「うん？さっきからどうしたの？<br class="sp">なんか落ち着かないね。<br class="sp">…って、ちょっと、どういうこと？<br class="sp">もしかして勃っちゃってるの？マジで？」<br>
+                ああ、もうダメだ!完全にバレたあなたは、<br>
+                開き直りオナニーしちゃうのでした。</p>
+            </div>
+            <div class="system-scenario__prices">
+              <div class="system-scenario__price">
+                <span class="system-scenario__price-time">60分</span>
+                <span class="system-scenario__price-amount">14,000円</span>
+              </div>
+              <div class="system-scenario__price">
+                <span class="system-scenario__price-time">90分</span>
+                <span class="system-scenario__price-amount">16,000円</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="system-scenario__divider" aria-hidden="true">
+          <img src="<?php echo $path; ?>assets/img/border.png" alt="">
+        </div>
+
+        <article class="system-scenario__card">
+          <div class="system-scenario__image">
+            <img src="<?php echo $path; ?>assets/img/system-02.png" alt="部下が谷間を見せつけてきた件">
+          </div>
+          <div class="system-scenario__body">
+            <p class="system-scenario__label">SCENARIO 02</p>
+            <div class="system-scenario__title">
+              <img src="<?php echo $path; ?>assets/img/scenario-2.png" alt="部下が谷間を見せつけてきた件">
+            </div>
+            <div class="system-scenario__prose">
+              <p>今日も残業、でも今日は部下も一緒に残業だ。</p>
+              <p>会社には2人だけ隣の部下が何やら暑いと<br class="sp">ブラウスのボタンを外し出す。<br>
+                ピンクのブラがチラチラと見え隠れ<br class="sp">「これって完全に誘ってる？」<br>
+                そんなことを考えていると体が勝手に反応しちゃって...<br>
+                その様子に気づいた部下が<br class="sp">「先輩なんか勃ってません？」<br>
+                必死に隠すが完全にバレてしまっている<br>
+                開き直りオナニーしちゃうのでした。</p>
+            </div>
+            <div class="system-scenario__prices">
+              <div class="system-scenario__price">
+                <span class="system-scenario__price-time">60分</span>
+                <span class="system-scenario__price-amount">16,000円</span>
+              </div>
+              <div class="system-scenario__price">
+                <span class="system-scenario__price-time">90分</span>
+                <span class="system-scenario__price-amount">18,000円</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="system-scenario__divider" aria-hidden="true">
+          <img src="<?php echo $path; ?>assets/img/border.png" alt="">
+        </div>
+
+        <article class="system-scenario__card">
+          <div class="system-scenario__image">
+            <img src="<?php echo $path; ?>assets/img/system-03.png" alt="上司のパンチラ見えてしまった件">
+          </div>
+          <div class="system-scenario__body">
+            <p class="system-scenario__label">SCENARIO 03</p>
+            <div class="system-scenario__title">
+              <img src="<?php echo $path; ?>assets/img/scenario-3.png" alt="上司のパンチラ見えてしまった件">
+            </div>
+            <div class="system-scenario__prose">
+              <p>初めての上司との残業、会社には2人だけ<br>ペンを落としてしまった僕は<br class="sp">拾おうとしゃがんだら<br>憧れの上司のパンティが丸見え！</p>
+              <p>ストッキングごしのパンティについ勃起してしまう。<br>
+                気づかれていないと確信し、<br class="sp">触っていると上司が近づいてきて<br>
+                「さっきから何してるの？<br class="sp">もしかして私のパンティ見て勃っちゃった？<br>
+                可愛い。ねぇ見せて」<br class="sp">と半ば強引にパンツを脱がされ<br>
+                辱められながら手でしごかれる。</p>
+            </div>
+            <div class="system-scenario__prices">
+              <div class="system-scenario__price">
+                <span class="system-scenario__price-time">60分</span>
+                <span class="system-scenario__price-amount">16,000円</span>
+              </div>
+              <div class="system-scenario__price">
+                <span class="system-scenario__price-time">90分</span>
+                <span class="system-scenario__price-amount">18,000円</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="system-scenario__divider" aria-hidden="true">
+          <img src="<?php echo $path; ?>assets/img/border.png" alt="">
+        </div>
+
+        <article class="system-scenario__card">
+          <div class="system-scenario__image">
+            <img src="<?php echo $path; ?>assets/img/system-04.png" alt="オリジナルでシナリオを作れる件">
+          </div>
+          <div class="system-scenario__body">
+            <p class="system-scenario__label">SCENARIO 04</p>
+            <div class="system-scenario__title">
+              <img src="<?php echo $path; ?>assets/img/scenario-4.png" alt="オリジナルでシナリオを作れる件">
+            </div>
+            <div class="system-scenario__prose">
+              <p>あなただけの特別オリジナルメニューです。<br>
+                お好みのシチュエーション、<br class="sp">女性の態度（もちろん、本人の可能なものに限りますが！）、反応、どうしてくれるのか、<br class="sp">などなど細かく設定、細かく設定、<br class="sp">カスタマイズしていただきます。</p>
+              <p>事前に当店スタッフがヒアリングシートを作成しますので、初回メニュー作成時のみ、お時間を頂戴することになります。<br>
+                また、女性によって対応できかねる内容もございます。</p>
+            </div>
+            <div class="system-scenario__prices">
+              <div class="system-scenario__price">
+                <span class="system-scenario__price-time">60分</span>
+                <span class="system-scenario__price-amount">16,000円</span>
+              </div>
+              <div class="system-scenario__price">
+                <span class="system-scenario__price-time">90分</span>
+                <span class="system-scenario__price-amount">18,000円</span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
     <section class="system__option">
       <div class="section-title">
         <h2>オプション</h2>
@@ -138,7 +184,7 @@ include $path . 'components/header.php';
             <span class="border-line"></span>
             <dd>1,000円</dd>
           </div>
-          <dd class="desc-text">おもちゃ・洗濯ばさみ・筆などでお姉さまから間接的に<br>
+          <dd class="desc-text">おもちゃ・洗濯ばさみ・筆などで<br class="sp">お姉さまから間接的に<br>
             責められちゃいます。</dd>
         </dl>
         <dl>
@@ -147,7 +193,7 @@ include $path . 'components/header.php';
             <span class="border-line"></span>
             <dd>2,000円</dd>
           </div>
-          <dd class="desc-text">ジャーや定規でお姉さんにオチンチンの長さを測られたり、<br>
+          <dd class="desc-text">ジャーや定規でお姉さんに<br class="sp">オチンチンの長さを測られたり、<br>
             体中のいたる所を測られます。</dd>
         </dl>
         <dl>
@@ -173,7 +219,7 @@ include $path . 'components/header.php';
             <span class="border-line"></span>
             <dd>3,000円</dd>
           </div>
-          <dd class="desc-text">お姉さんが脱ぎたてホヤホヤの人肌ストッキングで、<br>
+          <dd class="desc-text">お姉さんが脱ぎたてホヤホヤの<br class="sp">人肌ストッキングで、<br>
             オチンチンをシゴいてくれます。</dd>
         </dl>
         <dl>
@@ -206,7 +252,7 @@ include $path . 'components/header.php';
             <span class="border-line"></span>
             <dd>4,000円</dd>
           </div>
-          <dd class="desc-text">お客様の前で着替えて、その格好でプレイをして頂きます。<br>
+          <dd class="desc-text">お客様の前で着替えて、<br class="sp">その格好でプレイをして頂きます。<br>
             （持ち込みも可能）</dd>
         </dl>
         <dl>
@@ -215,7 +261,7 @@ include $path . 'components/header.php';
             <span class="border-line"></span>
             <dd>5,000円</dd>
           </div>
-          <dd class="desc-text">指だけで満足できない、もっとドＭなお客様向け。<br>
+          <dd class="desc-text">指だけで満足できない、<br class="sp">もっとドＭなお客様向け。<br>
             お好きなオモチャをお選びください。</dd>
         </dl>
       </div>
@@ -225,4 +271,4 @@ include $path . 'components/header.php';
     </section>
   </div>
 </main>
-<?php include $path . 'components/footer.php';?>
+<?php include $path . 'components/footer.php'; ?>

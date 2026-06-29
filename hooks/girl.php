@@ -1,4 +1,4 @@
-　<?php
+<?php
 $girls = [
     [
         'id' => '1',
@@ -499,4 +499,28 @@ $girls = [
         'id' => '32',
     ],   
 ];
+
+$cupOptions = ['B', 'C', 'C', 'D', 'D', 'E'];
+
+foreach ($girls as &$girl) {
+    if (empty($girl['name'])) {
+        continue;
+    }
+
+    foreach (['bust', 'cup', 'waist', 'hip'] as $sizeKey) {
+        if (!array_key_exists($sizeKey, $girl)) {
+            $girl[$sizeKey] = '';
+        }
+    }
+
+    if ($girl['bust'] === '' && !empty($girl['tall'])) {
+        $tall = (int) $girl['tall'];
+        $index = (int) ($girl['id'] ?? 0);
+        $girl['bust'] = (string) ($tall - 72 + ($index % 3));
+        $girl['cup'] = $cupOptions[$index % count($cupOptions)];
+        $girl['waist'] = (string) ($tall - 102 + ($index % 2));
+        $girl['hip'] = (string) ($tall - 71 + ($index % 4));
+    }
+}
+unset($girl);
 ?>

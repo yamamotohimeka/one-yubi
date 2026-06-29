@@ -1,92 +1,240 @@
 .schedule {
-  &__list {
-    padding: 91px 42px 100px;
-    @include pc {
-      padding: calc(91vw / (1200 / 100)) calc(20vw / (1200 / 100))
-        calc(100vw / (1200 / 100));
-    }
+  padding-bottom: $space-2xl;
+
+  .section-title {
     @include tab {
-      padding: calc(46vw / (768 / 100)) 0 calc(100vw / (768 / 100));
+      padding-top: $space-lg;
     }
+
+    @include sp {
+      padding-top: $space-md;
+    }
+  }
+
+  &__list {
+    padding: $space-lg 0 $space-xl;
+
+    @include tab {
+      padding: $space-md 0 $space-2xl;
+    }
+
+    @include girl-card-top-grid;
+    @include girl-card-top-card;
+
     .cast__box__list {
-      &:first-of-type {
-        &::before {
-          content: "";
-          display: block;
-          top: 0;
-          left: 0;
-          width: 700px;
-          @include pc {
-            width: calc(1200vw / (2000 / 100));
-          }
-          @include tab {
-            width: calc(600vw / (768 / 100));
-          }
-        }
+      @include tab {
+        padding: 0;
+      }
+
+      @include sp {
+        gap: 8px;
       }
     }
   }
+
   &__btn {
     text-align: center;
-    font-size: 18px;
-    @include pc {
-      font-size: calc(18vw / (1200 / 100));
+    padding-bottom: $space-lg;
+
+    @include tab {
+      margin: 0 (-$space-sm);
+      padding-bottom: $space-lg;
+    }
+
+    @include sp {
+      margin: 0 (-$space-xs);
+      padding-bottom: $space-md;
     }
 
     &__list {
-      @include flex;
-      color: #fff;
-      .dateactive {
-        background: $blue;
-        @include tab {
-          color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+      gap: 8px;
+      margin: 0;
+      padding: 0 0 $space-sm;
+      list-style: none;
+
+      @include pc {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding: 0 0 $space-md;
+        scroll-snap-type: x proximity;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+          display: none;
         }
       }
+
       @include tab {
-        padding: 0 calc(16vw / (768 / 100));
-        font-family: "A-OTF UD新ゴ Pro", $gothic;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 8px;
+        padding: 0 $space-sm $space-md;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+
+      @include sp {
+        gap: 6px;
+        padding: 0 $space-xs $space-md;
+      }
+
+      .dateactive {
+        background: linear-gradient(135deg, #de85a8 0%, $pink-dark 100%);
+        border-color: transparent;
+        color: #fff;
+        box-shadow: 0 4px 14px rgba($pink, 0.22);
+
+        .schedule__btn__list-link_date,
+        .schedule__btn__list-link_week {
+          color: #fff;
+        }
+
+        &:hover {
+          opacity: 1;
+          box-shadow: 0 6px 16px rgba($pink, 0.28);
+        }
       }
 
       &-link {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 8px;
-        width: 157px;
-        background-color: #3993a8;
-
+        gap: 2px;
+        flex: 0 0 auto;
+        width: 58px;
+        height: 58px;
+        min-height: 58px;
+        padding: 0;
+        background: #fff;
+        border: 1px solid rgba($pink, 0.18);
+        border-radius: 50%;
+        box-shadow: $shadow-sm;
+        color: #8f5f6f;
         text-align: center;
-        font-size: 20px;
+        font-weight: 500;
         cursor: pointer;
-        @include pc {
-          padding: calc(8vw / (1200 / 100)) calc(12vw / (1200 / 100));
-          font-size: calc(20vw / (1200 / 100));
-          width: calc(157vw / (1200 / 100));
+        scroll-snap-align: start;
+        transition:
+          background 0.25s ease,
+          border-color 0.25s ease,
+          color 0.25s ease,
+          box-shadow 0.25s ease,
+          transform 0.2s ease;
+
+        &:hover:not(.dateactive) {
+          border-color: rgba($pink, 0.32);
+          background: linear-gradient(
+            180deg,
+            #fff 0%,
+            rgba($pink, 0.08) 100%
+          );
+          color: $pink-dark;
+          box-shadow: $shadow-md;
+          transform: translateY(-1px);
+          opacity: 1;
         }
+
         @include tab {
-          flex-direction: column;
-          padding: calc(16vw / (768 / 100)) 0;
-          width: calc(97vw / (768 / 100));
-          font-size: calc(29vw / (768 / 100));
-          background-color: unset;
-          border: 2px solid $blue;
-          color: $blue;
-          border-radius: calc(5vw / (768 / 100));
-          &_week {
-            font-size: calc(26vw / (768 / 100));
+          &:hover:not(.dateactive) {
+            transform: none;
           }
+        }
+
+        @include sp {
+          width: 52px;
+          height: 52px;
+          min-height: 52px;
         }
 
         &_date {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          letter-spacing: -0.03em;
-          margin-right: 6px;
-          @include pc {
-            margin-right: calc(6vw / (1200 / 100));
-          }
+          display: block;
+          white-space: nowrap;
+          line-height: 1.2;
+          font-size: clamp(12px, 1.1vw, 14px);
+          letter-spacing: 0;
         }
+
+        &_week {
+          display: block;
+          line-height: 1.2;
+          font-size: clamp(10px, 0.95vw, 12px);
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .girlCard--top {
+    .girlCard__link {
+      @include tab {
+        padding: $space-xs;
+
+        &:hover {
+          transform: none;
+        }
+      }
+    }
+
+    .girlCard-img {
+      @include tab {
+        margin: (-$space-xs) (-$space-xs) 0;
+        width: calc(100% + #{$space-xs * 2});
+      }
+
+      img {
+        @include sp {
+          aspect-ratio: 3 / 3.8;
+        }
+      }
+    }
+
+    .girlCard-fee {
+      @include tab {
+        margin: 0 (-$space-xs);
+        width: calc(100% + #{$space-xs * 2});
+        font-size: 11px;
+        padding: 5px 0;
+      }
+    }
+
+    .girlCard-body {
+      @include sp {
+        padding-top: 8px;
+      }
+    }
+
+    .girlCard-time {
+      @include sp {
+        font-size: 10px;
+        padding: 4px 8px;
+      }
+    }
+
+    .girlCard-name {
+      h3 {
+        @include sp {
+          font-size: 13px;
+        }
+      }
+    }
+
+    .girlCard-stats {
+      @include sp {
+        font-size: 10px;
+        line-height: 1.4;
+        word-break: break-word;
       }
     }
   }
